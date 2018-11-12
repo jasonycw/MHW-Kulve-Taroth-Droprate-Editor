@@ -129,6 +129,7 @@ namespace MHW_Shop_Editor
 
         private void Default_Items(object sender, RoutedEventArgs e)
         {
+            Clear();
             Populate_Boxes(DEFAULT_ITEMS.ToList());
         }
 
