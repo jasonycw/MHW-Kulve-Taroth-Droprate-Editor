@@ -30,9 +30,13 @@ namespace MHW_Shop_Editor
             }
         }
 
-        private void Populate_Boxes(byte[] file)
+        private void Populate_Boxes(List<string> items)
         {
-
+            foreach (ComboBox cb in listview.Items)
+            {
+                cb.SelectedIndex = int.Parse(items[0], System.Globalization.NumberStyles.HexNumber);
+                items.RemoveAt(0);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -53,10 +57,20 @@ namespace MHW_Shop_Editor
             if (dlg.ShowDialog() == true)
             {
                 string filename = dlg.FileName;
+                byte[] input = System.IO.File.ReadAllBytes(filename);
+                byte[] buffer = new byte[2];
+                List<string> items = new List<string>();
+                for (int i = 10; i < input.Length-1; i+=12)
+                {
+                    buffer[0] = input[i+1];
+                    buffer[1] = input[i];
+                    items.Add(BitConverter.ToString(buffer).Replace("-", ""));
+                }
+                Populate_Boxes(items);
             }
         }
 
-        private void saveFile(object sender, RoutedEventArgs e)
+        private async void saveFile(object sender, RoutedEventArgs e)
         {
             System.IO.Stream fs;
             Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog()
@@ -74,7 +88,7 @@ namespace MHW_Shop_Editor
                 {
                     byte[] header = new byte[] { 0x18, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
                     byte[] buffer = new byte[] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
-                    List<byte> output = header.ToList();
+                    List<byte> items = header.ToList();
                     foreach (ComboBox cb in listview.Items)
                     {
                         Item item = (Item) cb.SelectedItem;
@@ -84,12 +98,13 @@ namespace MHW_Shop_Editor
                             continue;
                         } else
                         {
-                            output.Add(Convert.ToByte(hex.Substring(2)));
-                            output.Add(Convert.ToByte(hex.Substring(0, 2)));
-                            output.AddRange(buffer);
+                            items.Add(Convert.ToByte(hex.Substring(2)));
+                            items.Add(Convert.ToByte(hex.Substring(0, 2)));
+                            items.AddRange(buffer);
                         }                        
                     }
-                    fs.WriteAsync(output.ToArray(), 0, output.Count);
+                    byte[] output = items.ToArray();
+                    await fs.WriteAsync(output, 0, output.Length);
                     fs.Close();
                 }
             }
