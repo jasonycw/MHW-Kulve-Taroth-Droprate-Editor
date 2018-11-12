@@ -21,13 +21,13 @@ namespace MHW_Shop_Editor
     public partial class MainWindow : Window
     {
 
+        public static readonly string[] DEFAULT_ITEMS = { "0001", "0005", "000D", "0011", "0046", "0047", "0048", "004A", "004B", "004F", "0058", "0059", "005A", "005C", "0055", "0056", "0057", "0066", "0067", "008A", "008C", "008D", "008F", "0090", "0092", "0093", "0095", "0096", "0098", "0099", "009A", "009B", "009D", "009E", "009F", "00A0", "00A1", "00A2", "00A3", "00A4", "00A5", "00A7", "00A8", "00A9", "00AE", "00AF", "00B0", "00B1", "00B2", "00B4" };
+
         public MainWindow()
         {
             InitializeComponent();
-            foreach (ComboBox cb in listview.Items)
-            {
-                cb.SelectedIndex = 0;
-            }
+            Clear();
+
         }
 
         private void Populate_Boxes(List<string> items)
@@ -127,6 +127,23 @@ namespace MHW_Shop_Editor
             this.Resources.MergedDictionaries.Add(dict);
         }
 
+        private void Default_Items(object sender, RoutedEventArgs e)
+        {
+            Populate_Boxes(DEFAULT_ITEMS.ToList());
+        }
+
+        private void Clear_Button(object sender, RoutedEventArgs e)
+        {
+            Clear();
+        }
+
+        private void Clear()
+        {
+            foreach (ComboBox cb in listview.Items)
+            {
+                cb.SelectedIndex = 0;
+            }
+        }
     }
 
     public class Item
@@ -138,4 +155,5 @@ namespace MHW_Shop_Editor
             return Value;
         }
     }
+
 }

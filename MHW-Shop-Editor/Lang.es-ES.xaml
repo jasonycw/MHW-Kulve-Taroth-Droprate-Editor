@@ -4,6 +4,7 @@
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
     
     
+    <!--TODO: Translate strings-->
     <!--application-->
     <system:String x:Key="title">MHW Shop Editor</system:String>
     <system:String x:Key="file">File</system:String>
@@ -12,7 +13,9 @@
     <system:String x:Key="lang">Language</system:String>
     <system:String x:Key="default">Default Items</system:String>
     <system:String x:Key="gems">All Gems</system:String>
+    <system:String x:Key="clear">Clear Items</system:String>
 
+    
     <!--itemlist-->
     <x:Array Type="local:Item" x:Key="itemsList" >
         <local:Item Key="item0000" Value="----------"/>
@@ -21,6 +24,181 @@
         <local:Item Key="item0003" Value="Item 3"/>
         <local:Item Key="item0004" Value="Item 4"/>
         <local:Item Key="item0005" Value="Item 5"/>
+        <local:Item Key="item0006" Value="Item 6"/>
+        <local:Item Key="item0007" Value="Item 7"/>
+        <local:Item Key="item0008" Value="Item 8"/>
+        <local:Item Key="item0009" Value="Item 9"/>
+        <local:Item Key="item000A" Value="Item 10"/>
+        <local:Item Key="item000B" Value="Item 11"/>
+        <local:Item Key="item000C" Value="Item 12"/>
+        <local:Item Key="item000D" Value="Item 13"/>
+        <local:Item Key="item000E" Value="Item 14"/>
+        <local:Item Key="item000F" Value="Item 15"/>
+        <local:Item Key="item0010" Value="Item 16"/>
+        <local:Item Key="item0011" Value="Item 17"/>
+        <local:Item Key="item0012" Value="Item 18"/>
+        <local:Item Key="item0013" Value="Item 19"/>
+        <local:Item Key="item0014" Value="Item 20"/>
+        <local:Item Key="item0015" Value="Item 21"/>
+        <local:Item Key="item0016" Value="Item 22"/>
+        <local:Item Key="item0017" Value="Item 23"/>
+        <local:Item Key="item0018" Value="Item 24"/>
+        <local:Item Key="item0019" Value="Item 25"/>
+        <local:Item Key="item001A" Value="Item 26"/>
+        <local:Item Key="item001B" Value="Item 27"/>
+        <local:Item Key="item001C" Value="Item 28"/>
+        <local:Item Key="item001D" Value="Item 29"/>
+        <local:Item Key="item001E" Value="Item 30"/>
+        <local:Item Key="item001F" Value="Item 31"/>
+        <local:Item Key="item0020" Value="Item 32"/>
+        <local:Item Key="item0021" Value="Item 33"/>
+        <local:Item Key="item0022" Value="Item 34"/>
+        <local:Item Key="item0023" Value="Item 35"/>
+        <local:Item Key="item0024" Value="Item 36"/>
+        <local:Item Key="item0025" Value="Item 37"/>
+        <local:Item Key="item0026" Value="Item 38"/>
+        <local:Item Key="item0027" Value="Item 39"/>
+        <local:Item Key="item0028" Value="Item 40"/>
+        <local:Item Key="item0029" Value="Item 41"/>
+        <local:Item Key="item002A" Value="Item 42"/>
+        <local:Item Key="item002B" Value="Item 43"/>
+        <local:Item Key="item002C" Value="Item 44"/>
+        <local:Item Key="item002D" Value="Item 45"/>
+        <local:Item Key="item002E" Value="Item 46"/>
+        <local:Item Key="item002F" Value="Item 47"/>
+        <local:Item Key="item0030" Value="Item 48"/>
+        <local:Item Key="item0031" Value="Item 49"/>
+        <local:Item Key="item0032" Value="Item 50"/>
+        <local:Item Key="item0033" Value="Item 51"/>
+        <local:Item Key="item0034" Value="Item 52"/>
+        <local:Item Key="item0035" Value="Item 53"/>
+        <local:Item Key="item0036" Value="Item 54"/>
+        <local:Item Key="item0037" Value="Item 55"/>
+        <local:Item Key="item0038" Value="Item 56"/>
+        <local:Item Key="item0039" Value="Item 57"/>
+        <local:Item Key="item003A" Value="Item 58"/>
+        <local:Item Key="item003B" Value="Item 59"/>
+        <local:Item Key="item003C" Value="Item 60"/>
+        <local:Item Key="item003D" Value="Item 61"/>
+        <local:Item Key="item003E" Value="Item 62"/>
+        <local:Item Key="item003F" Value="Item 63"/>
+        <local:Item Key="item0040" Value="Item 64"/>
+        <local:Item Key="item0041" Value="Item 65"/>
+        <local:Item Key="item0042" Value="Item 66"/>
+        <local:Item Key="item0043" Value="Item 67"/>
+        <local:Item Key="item0044" Value="Item 68"/>
+        <local:Item Key="item0045" Value="Item 69"/>
+        <local:Item Key="item0046" Value="Item 70"/>
+        <local:Item Key="item0047" Value="Item 71"/>
+        <local:Item Key="item0048" Value="Item 72"/>
+        <local:Item Key="item0049" Value="Item 73"/>
+        <local:Item Key="item004A" Value="Item 74"/>
+        <local:Item Key="item004B" Value="Item 75"/>
+        <local:Item Key="item004C" Value="Item 76"/>
+        <local:Item Key="item004D" Value="Item 77"/>
+        <local:Item Key="item004E" Value="Item 78"/>
+        <local:Item Key="item004F" Value="Item 79"/>
+        <local:Item Key="item0050" Value="Item 80"/>
+        <local:Item Key="item0051" Value="Item 81"/>
+        <local:Item Key="item0052" Value="Item 82"/>
+        <local:Item Key="item0053" Value="Item 83"/>
+        <local:Item Key="item0054" Value="Item 84"/>
+        <local:Item Key="item0055" Value="Item 85"/>
+        <local:Item Key="item0056" Value="Item 86"/>
+        <local:Item Key="item0057" Value="Item 87"/>
+        <local:Item Key="item0058" Value="Item 88"/>
+        <local:Item Key="item0059" Value="Item 89"/>
+        <local:Item Key="item005A" Value="Item 90"/>
+        <local:Item Key="item005B" Value="Item 91"/>
+        <local:Item Key="item005C" Value="Item 92"/>
+        <local:Item Key="item005D" Value="Item 93"/>
+        <local:Item Key="item005E" Value="Item 94"/>
+        <local:Item Key="item005F" Value="Item 95"/>
+        <local:Item Key="item0060" Value="Item 96"/>
+        <local:Item Key="item0061" Value="Item 97"/>
+        <local:Item Key="item0062" Value="Item 98"/>
+        <local:Item Key="item0063" Value="Item 99"/>
+        <local:Item Key="item0064" Value="Item 100"/>
+        <local:Item Key="item0065" Value="Item 101"/>
+        <local:Item Key="item0066" Value="Item 102"/>
+        <local:Item Key="item0067" Value="Item 103"/>
+        <local:Item Key="item0068" Value="Item 104"/>
+        <local:Item Key="item0069" Value="Item 105"/>
+        <local:Item Key="item006A" Value="Item 106"/>
+        <local:Item Key="item006B" Value="Item 107"/>
+        <local:Item Key="item006C" Value="Item 108"/>
+        <local:Item Key="item006D" Value="Item 109"/>
+        <local:Item Key="item006E" Value="Item 110"/>
+        <local:Item Key="item006F" Value="Item 111"/>
+        <local:Item Key="item0070" Value="Item 112"/>
+        <local:Item Key="item0071" Value="Item 113"/>
+        <local:Item Key="item0072" Value="Item 114"/>
+        <local:Item Key="item0073" Value="Item 115"/>
+        <local:Item Key="item0074" Value="Item 116"/>
+        <local:Item Key="item0075" Value="Item 117"/>
+        <local:Item Key="item0076" Value="Item 118"/>
+        <local:Item Key="item0077" Value="Item 119"/>
+        <local:Item Key="item0078" Value="Item 120"/>
+        <local:Item Key="item0079" Value="Item 121"/>
+        <local:Item Key="item007A" Value="Item 122"/>
+        <local:Item Key="item007B" Value="Item 123"/>
+        <local:Item Key="item007C" Value="Item 124"/>
+        <local:Item Key="item007D" Value="Item 125"/>
+        <local:Item Key="item007E" Value="Item 126"/>
+        <local:Item Key="item007F" Value="Item 127"/>
+        <local:Item Key="item0080" Value="Item 128"/>
+        <local:Item Key="item0081" Value="Item 129"/>
+        <local:Item Key="item0082" Value="Item 130"/>
+        <local:Item Key="item0083" Value="Item 131"/>
+        <local:Item Key="item0084" Value="Item 132"/>
+        <local:Item Key="item0085" Value="Item 133"/>
+        <local:Item Key="item0086" Value="Item 134"/>
+        <local:Item Key="item0087" Value="Item 135"/>
+        <local:Item Key="item0088" Value="Item 136"/>
+        <local:Item Key="item0089" Value="Item 137"/>
+        <local:Item Key="item008A" Value="Item 138"/>
+        <local:Item Key="item008B" Value="Item 139"/>
+        <local:Item Key="item008C" Value="Item 140"/>
+        <local:Item Key="item008D" Value="Item 141"/>
+        <local:Item Key="item008E" Value="Item 142"/>
+        <local:Item Key="item008F" Value="Item 143"/>
+        <local:Item Key="item0090" Value="Item 144"/>
+        <local:Item Key="item0091" Value="Item 145"/>
+        <local:Item Key="item0092" Value="Item 146"/>
+        <local:Item Key="item0093" Value="Item 147"/>
+        <local:Item Key="item0094" Value="Item 148"/>
+        <local:Item Key="item0095" Value="Item 149"/>
+        <local:Item Key="item0096" Value="Item 150"/>
+        <local:Item Key="item0097" Value="Item 151"/>
+        <local:Item Key="item0098" Value="Item 152"/>
+        <local:Item Key="item0099" Value="Item 153"/>
+        <local:Item Key="item009A" Value="Item 154"/>
+        <local:Item Key="item009B" Value="Item 155"/>
+        <local:Item Key="item009C" Value="Item 156"/>
+        <local:Item Key="item009D" Value="Item 157"/>
+        <local:Item Key="item009E" Value="Item 158"/>
+        <local:Item Key="item009F" Value="Item 159"/>
+        <local:Item Key="item00A0" Value="Item 160"/>
+        <local:Item Key="item00A1" Value="Item 161"/>
+        <local:Item Key="item00A2" Value="Item 162"/>
+        <local:Item Key="item00A3" Value="Item 163"/>
+        <local:Item Key="item00A4" Value="Item 164"/>
+        <local:Item Key="item00A5" Value="Item 165"/>
+        <local:Item Key="item00A6" Value="Item 166"/>
+        <local:Item Key="item00A7" Value="Item 167"/>
+        <local:Item Key="item00A8" Value="Item 168"/>
+        <local:Item Key="item00A9" Value="Item 169"/>
+        <local:Item Key="item00AA" Value="Item 170"/>
+        <local:Item Key="item00AB" Value="Item 171"/>
+        <local:Item Key="item00AC" Value="Item 172"/>
+        <local:Item Key="item00AD" Value="Item 173"/>
+        <local:Item Key="item00AE" Value="Item 174"/>
+        <local:Item Key="item00AF" Value="Item 175"/>
+        <local:Item Key="item00B0" Value="Item 176"/>
+        <local:Item Key="item00B1" Value="Item 177"/>
+        <local:Item Key="item00B2" Value="Item 178"/>
+        <local:Item Key="item00B3" Value="Item 179"/>
+        <local:Item Key="item00B4" Value="Item 180"/>
     </x:Array>
 
 </ResourceDictionary>
