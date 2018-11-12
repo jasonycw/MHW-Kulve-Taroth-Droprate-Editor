@@ -24,6 +24,15 @@ namespace MHW_Shop_Editor
         public MainWindow()
         {
             InitializeComponent();
+            foreach (ComboBox cb in listview.Items)
+            {
+                cb.SelectedIndex = 0;
+            }
+        }
+
+        private void Populate_Boxes(byte[] file)
+        {
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -63,7 +72,24 @@ namespace MHW_Shop_Editor
             {
                 if ((fs = dlg.OpenFile()) != null)
                 {
-                    // Code to write the stream goes here.
+                    byte[] header = new byte[] { 0x18, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+                    byte[] buffer = new byte[] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+                    List<byte> output = header.ToList();
+                    foreach (ComboBox cb in listview.Items)
+                    {
+                        Item item = (Item) cb.SelectedItem;
+                        string hex = item.Key.Substring(4);
+                        if (hex.Equals("0000"))
+                        {
+                            continue;
+                        } else
+                        {
+                            output.Add(Convert.ToByte(hex.Substring(2)));
+                            output.Add(Convert.ToByte(hex.Substring(0, 2)));
+                            output.AddRange(buffer);
+                        }                        
+                    }
+                    fs.WriteAsync(output.ToArray(), 0, output.Count);
                     fs.Close();
                 }
             }
@@ -87,5 +113,15 @@ namespace MHW_Shop_Editor
             this.Resources.MergedDictionaries.Add(dict);
         }
 
+    }
+
+    public class Item
+    {
+        public string Key { get; set; }
+        public string Value { get; set; }
+        public override string ToString()
+        {
+            return Value;
+        }
     }
 }

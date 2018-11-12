@@ -12,19 +12,15 @@
     <system:String x:Key="lang">Language</system:String>
     <system:String x:Key="default">Default Items</system:String>
     <system:String x:Key="gems">All Gems</system:String>
-    
+
     <!--itemlist-->
-    <x:Array Type="system:String" x:Key="itemsList" >
-        <system:String>item001</system:String>
-        <system:String>item002</system:String>
-        <system:String>item003</system:String>
-        <system:String>item004</system:String>
-        <system:String>item005</system:String>
-        <system:String>item006</system:String>
-        <system:String>item007</system:String>
-        <system:String>item008</system:String>
-        <system:String>item009</system:String>
-        <system:String>item010</system:String>
+    <x:Array Type="local:Item" x:Key="itemsList" >
+        <local:Item Key="item0000" Value="----------"/>
+        <local:Item Key="item0001" Value="Item 1"/>
+        <local:Item Key="item0002" Value="Item 2"/>
+        <local:Item Key="item0003" Value="Item 3"/>
+        <local:Item Key="item0004" Value="Item 4"/>
+        <local:Item Key="item0005" Value="Item 5"/>
     </x:Array>
 
 </ResourceDictionary>

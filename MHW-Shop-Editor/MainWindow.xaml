@@ -7,8 +7,14 @@
         mc:Ignorable="d" Height="450" Width="800" Title="{DynamicResource title}">
     <Grid>
 
-        <ListView HorizontalAlignment="Left" Height="371" Margin="79,24,0,0" VerticalAlignment="Top" Width="154" >
-            <ComboBox Width="120" VirtualizingPanel.IsVirtualizing="True"  ItemsSource="{DynamicResource itemsList}"/>
+        <ListView HorizontalAlignment="Left" Height="371" Margin="79,24,0,0" VerticalAlignment="Top" Width="154" Name="listview">
+            <ComboBox Width="120" ItemsSource="{DynamicResource itemsList}">
+                <ComboBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel />
+                    </ItemsPanelTemplate>
+                </ComboBox.ItemsPanel>
+            </ComboBox>
         </ListView>
         <Button Content="{DynamicResource default}" HorizontalAlignment="Left" Margin="362,52,0,0" VerticalAlignment="Top"/>
         <Button Content="{DynamicResource gems}" HorizontalAlignment="Left" Margin="362,98,0,0" VerticalAlignment="Top" Click="Button_Click"/>
