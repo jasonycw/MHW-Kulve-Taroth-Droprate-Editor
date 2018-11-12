@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MHW_Shop_Editor"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!--application-->
+    <system:String x:Key="title">MHW Shop Editor</system:String>
+    <system:String x:Key="file">File</system:String>
+    <system:String x:Key="open">Open</system:String>
+    <system:String x:Key="save">Save</system:String>
+    <system:String x:Key="lang">Language</system:String>
+    <system:String x:Key="default">Default Items</system:String>
+    <system:String x:Key="gems">All Gems</system:String>
+
+    <!--itemlist-->
+    <x:Array Type="system:String" x:Key="itemsList" >
+        <system:String>item001</system:String>
+        <system:String>item002</system:String>
+        <system:String>item003</system:String>
+        <system:String>item004</system:String>
+        <system:String>item005</system:String>
+        <system:String>item006</system:String>
+        <system:String>item007</system:String>
+        <system:String>item008</system:String>
+        <system:String>item009</system:String>
+        <system:String>item010</system:String>
+    </x:Array>
+
+</ResourceDictionary>

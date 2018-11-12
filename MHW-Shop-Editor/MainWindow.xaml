@@ -1,0 +1,29 @@
+﻿<Window x:Class="MHW_Shop_Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MHW_Shop_Editor"
+        mc:Ignorable="d" Height="450" Width="800" Title="{DynamicResource title}">
+    <Grid>
+
+        <ListView HorizontalAlignment="Left" Height="371" Margin="79,24,0,0" VerticalAlignment="Top" Width="154" >
+            <ComboBox Width="120" VirtualizingPanel.IsVirtualizing="True"  ItemsSource="{DynamicResource itemsList}"/>
+        </ListView>
+        <Button Content="{DynamicResource default}" HorizontalAlignment="Left" Margin="362,52,0,0" VerticalAlignment="Top"/>
+        <Button Content="{DynamicResource gems}" HorizontalAlignment="Left" Margin="362,98,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Menu HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="792">
+            <MenuItem Header="{DynamicResource file}" Height="19" Width="100">
+                <MenuItem Header="{DynamicResource open}" HorizontalAlignment="Left" Height="30" Width="140" Click="openFile"/>
+                <MenuItem Header="{DynamicResource save}" HorizontalAlignment="Left" Height="30" Width="140" Click="saveFile"/>
+            </MenuItem>
+            <MenuItem Header="{DynamicResource lang}" Height="19" Width="100">
+                <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged" SelectedIndex="0">
+                    <ComboBoxItem Content="English" Tag="en-US"/>
+                    <ComboBoxItem Content="Español" Tag="es-ES"/>
+                </ComboBox>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</Window>
