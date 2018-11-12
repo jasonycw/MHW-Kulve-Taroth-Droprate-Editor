@@ -34,14 +34,13 @@ namespace MHW_Shop_Editor
         {
             foreach (ComboBox cb in listview.Items)
             {
+                if (items.Count == 0)
+                {
+                    break;
+                }
                 cb.SelectedIndex = int.Parse(items[0], System.Globalization.NumberStyles.HexNumber);
                 items.RemoveAt(0);
             }
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void openFile(object sender, RoutedEventArgs e)
