@@ -532,6 +532,5 @@
         <local:Item Key="item01FF" Value="Item 511"/>
         <local:Item Key="item0200" Value="Item 512"/>
     </x:Array>
-    </x:Array>
 
 </ResourceDictionary>
