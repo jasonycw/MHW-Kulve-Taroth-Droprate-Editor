@@ -126,6 +126,7 @@ namespace MHW_Shop_Editor
                     break;
             }
             this.Resources.MergedDictionaries.Add(dict);
+            Clear();
         }
 
         private void Default_Items(object sender, RoutedEventArgs e)
