@@ -531,262 +531,262 @@
         <local:Item Key="item01FE" Value="Vaal Hazak Talon"/>
         <local:Item Key="item01FF" Value="Vaal Hazak Wing"/>
         <local:Item Key="item0200" Value="Vaal Hazak Miasmacryst"/>
-        <local:Item Key="item0201" Value="Item 513"/>
-        <local:Item Key="item0202" Value="Item 514"/>
-        <local:Item Key="item0203" Value="Item 515"/>
-        <local:Item Key="item0204" Value="Item 516"/>
-        <local:Item Key="item0205" Value="Item 517"/>
-        <local:Item Key="item0206" Value="Item 518"/>
-        <local:Item Key="item0207" Value="Item 519"/>
-        <local:Item Key="item0208" Value="Item 520"/>
-        <local:Item Key="item0209" Value="Item 521"/>
-        <local:Item Key="item020A" Value="Item 522"/>
-        <local:Item Key="item020B" Value="Item 523"/>
-        <local:Item Key="item020C" Value="Item 524"/>
-        <local:Item Key="item020D" Value="Item 525"/>
-        <local:Item Key="item020E" Value="Item 526"/>
-        <local:Item Key="item020F" Value="Item 527"/>
-        <local:Item Key="item0210" Value="Item 528"/>
-        <local:Item Key="item0211" Value="Item 529"/>
-        <local:Item Key="item0212" Value="Item 530"/>
-        <local:Item Key="item0213" Value="Item 531"/>
-        <local:Item Key="item0214" Value="Item 532"/>
-        <local:Item Key="item0215" Value="Item 533"/>
-        <local:Item Key="item0216" Value="Item 534"/>
-        <local:Item Key="item0217" Value="Item 535"/>
-        <local:Item Key="item0218" Value="Item 536"/>
-        <local:Item Key="item0219" Value="Item 537"/>
-        <local:Item Key="item021A" Value="Item 538"/>
-        <local:Item Key="item021B" Value="Item 539"/>
-        <local:Item Key="item021C" Value="Item 540"/>
-        <local:Item Key="item021D" Value="Item 541"/>
-        <local:Item Key="item021E" Value="Item 542"/>
-        <local:Item Key="item021F" Value="Item 543"/>
-        <local:Item Key="item0220" Value="Item 544"/>
-        <local:Item Key="item0221" Value="Item 545"/>
-        <local:Item Key="item0222" Value="Item 546"/>
-        <local:Item Key="item0223" Value="Item 547"/>
-        <local:Item Key="item0224" Value="Item 548"/>
-        <local:Item Key="item0225" Value="Item 549"/>
-        <local:Item Key="item0226" Value="Item 550"/>
-        <local:Item Key="item0227" Value="Item 551"/>
-        <local:Item Key="item0228" Value="Item 552"/>
-        <local:Item Key="item0229" Value="Item 553"/>
-        <local:Item Key="item022A" Value="Item 554"/>
-        <local:Item Key="item022B" Value="Item 555"/>
-        <local:Item Key="item022C" Value="Item 556"/>
-        <local:Item Key="item022D" Value="Item 557"/>
-        <local:Item Key="item022E" Value="Item 558"/>
-        <local:Item Key="item022F" Value="Item 559"/>
-        <local:Item Key="item0230" Value="Item 560"/>
-        <local:Item Key="item0231" Value="Item 561"/>
-        <local:Item Key="item0232" Value="Item 562"/>
-        <local:Item Key="item0233" Value="Item 563"/>
-        <local:Item Key="item0234" Value="Item 564"/>
-        <local:Item Key="item0235" Value="Item 565"/>
-        <local:Item Key="item0236" Value="Item 566"/>
-        <local:Item Key="item0237" Value="Item 567"/>
-        <local:Item Key="item0238" Value="Item 568"/>
-        <local:Item Key="item0239" Value="Item 569"/>
-        <local:Item Key="item023A" Value="Item 570"/>
-        <local:Item Key="item023B" Value="Item 571"/>
-        <local:Item Key="item023C" Value="Item 572"/>
-        <local:Item Key="item023D" Value="Item 573"/>
-        <local:Item Key="item023E" Value="Item 574"/>
-        <local:Item Key="item023F" Value="Item 575"/>
-        <local:Item Key="item0240" Value="Item 576"/>
-        <local:Item Key="item0241" Value="Item 577"/>
-        <local:Item Key="item0242" Value="Item 578"/>
-        <local:Item Key="item0243" Value="Item 579"/>
-        <local:Item Key="item0244" Value="Item 580"/>
-        <local:Item Key="item0245" Value="Item 581"/>
-        <local:Item Key="item0246" Value="Item 582"/>
-        <local:Item Key="item0247" Value="Item 583"/>
-        <local:Item Key="item0248" Value="Item 584"/>
-        <local:Item Key="item0249" Value="Item 585"/>
-        <local:Item Key="item024A" Value="Item 586"/>
-        <local:Item Key="item024B" Value="Item 587"/>
-        <local:Item Key="item024C" Value="Item 588"/>
-        <local:Item Key="item024D" Value="Item 589"/>
-        <local:Item Key="item024E" Value="Item 590"/>
-        <local:Item Key="item024F" Value="Item 591"/>
-        <local:Item Key="item0250" Value="Item 592"/>
-        <local:Item Key="item0251" Value="Item 593"/>
-        <local:Item Key="item0252" Value="Item 594"/>
-        <local:Item Key="item0253" Value="Item 595"/>
-        <local:Item Key="item0254" Value="Item 596"/>
-        <local:Item Key="item0255" Value="Item 597"/>
-        <local:Item Key="item0256" Value="Item 598"/>
-        <local:Item Key="item0257" Value="Item 599"/>
-        <local:Item Key="item0258" Value="Item 600"/>
-        <local:Item Key="item0259" Value="Item 601"/>
-        <local:Item Key="item025A" Value="Item 602"/>
-        <local:Item Key="item025B" Value="Item 603"/>
-        <local:Item Key="item025C" Value="Item 604"/>
-        <local:Item Key="item025D" Value="Item 605"/>
-        <local:Item Key="item025E" Value="Item 606"/>
-        <local:Item Key="item025F" Value="Item 607"/>
-        <local:Item Key="item0260" Value="Item 608"/>
-        <local:Item Key="item0261" Value="Item 609"/>
-        <local:Item Key="item0262" Value="Item 610"/>
-        <local:Item Key="item0263" Value="Item 611"/>
-        <local:Item Key="item0264" Value="Item 612"/>
-        <local:Item Key="item0265" Value="Item 613"/>
-        <local:Item Key="item0266" Value="Item 614"/>
-        <local:Item Key="item0267" Value="Item 615"/>
-        <local:Item Key="item0268" Value="Item 616"/>
-        <local:Item Key="item0269" Value="Item 617"/>
-        <local:Item Key="item026A" Value="Item 618"/>
-        <local:Item Key="item026B" Value="Item 619"/>
-        <local:Item Key="item026C" Value="Item 620"/>
-        <local:Item Key="item026D" Value="Item 621"/>
-        <local:Item Key="item026E" Value="Item 622"/>
-        <local:Item Key="item026F" Value="Item 623"/>
-        <local:Item Key="item0270" Value="Item 624"/>
-        <local:Item Key="item0271" Value="Item 625"/>
-        <local:Item Key="item0272" Value="Item 626"/>
-        <local:Item Key="item0273" Value="Item 627"/>
-        <local:Item Key="item0274" Value="Item 628"/>
-        <local:Item Key="item0275" Value="Item 629"/>
-        <local:Item Key="item0276" Value="Item 630"/>
-        <local:Item Key="item0277" Value="Item 631"/>
-        <local:Item Key="item0278" Value="Item 632"/>
-        <local:Item Key="item0279" Value="Item 633"/>
-        <local:Item Key="item027A" Value="Item 634"/>
-        <local:Item Key="item027B" Value="Item 635"/>
-        <local:Item Key="item027C" Value="Item 636"/>
-        <local:Item Key="item027D" Value="Item 637"/>
-        <local:Item Key="item027E" Value="Item 638"/>
-        <local:Item Key="item027F" Value="Item 639"/>
-        <local:Item Key="item0280" Value="Item 640"/>
-        <local:Item Key="item0281" Value="Item 641"/>
-        <local:Item Key="item0282" Value="Item 642"/>
-        <local:Item Key="item0283" Value="Item 643"/>
-        <local:Item Key="item0284" Value="Item 644"/>
-        <local:Item Key="item0285" Value="Item 645"/>
-        <local:Item Key="item0286" Value="Item 646"/>
-        <local:Item Key="item0287" Value="Item 647"/>
-        <local:Item Key="item0288" Value="Item 648"/>
-        <local:Item Key="item0289" Value="Item 649"/>
-        <local:Item Key="item028A" Value="Item 650"/>
-        <local:Item Key="item028B" Value="Item 651"/>
-        <local:Item Key="item028C" Value="Item 652"/>
-        <local:Item Key="item028D" Value="Item 653"/>
-        <local:Item Key="item028E" Value="Item 654"/>
-        <local:Item Key="item028F" Value="Item 655"/>
-        <local:Item Key="item0290" Value="Item 656"/>
-        <local:Item Key="item0291" Value="Item 657"/>
-        <local:Item Key="item0292" Value="Item 658"/>
-        <local:Item Key="item0293" Value="Item 659"/>
-        <local:Item Key="item0294" Value="Item 660"/>
-        <local:Item Key="item0295" Value="Item 661"/>
-        <local:Item Key="item0296" Value="Item 662"/>
-        <local:Item Key="item0297" Value="Item 663"/>
-        <local:Item Key="item0298" Value="Item 664"/>
-        <local:Item Key="item0299" Value="Item 665"/>
-        <local:Item Key="item029A" Value="Item 666"/>
-        <local:Item Key="item029B" Value="Item 667"/>
-        <local:Item Key="item029C" Value="Item 668"/>
-        <local:Item Key="item029D" Value="Item 669"/>
-        <local:Item Key="item029E" Value="Item 670"/>
-        <local:Item Key="item029F" Value="Item 671"/>
-        <local:Item Key="item02A0" Value="Item 672"/>
-        <local:Item Key="item02A1" Value="Item 673"/>
-        <local:Item Key="item02A2" Value="Item 674"/>
-        <local:Item Key="item02A3" Value="Item 675"/>
-        <local:Item Key="item02A4" Value="Item 676"/>
-        <local:Item Key="item02A5" Value="Item 677"/>
-        <local:Item Key="item02A6" Value="Item 678"/>
-        <local:Item Key="item02A7" Value="Item 679"/>
-        <local:Item Key="item02A8" Value="Item 680"/>
-        <local:Item Key="item02A9" Value="Item 681"/>
-        <local:Item Key="item02AA" Value="Item 682"/>
-        <local:Item Key="item02AB" Value="Item 683"/>
-        <local:Item Key="item02AC" Value="Item 684"/>
-        <local:Item Key="item02AD" Value="Item 685"/>
-        <local:Item Key="item02AE" Value="Item 686"/>
-        <local:Item Key="item02AF" Value="Item 687"/>
-        <local:Item Key="item02B0" Value="Item 688"/>
-        <local:Item Key="item02B1" Value="Item 689"/>
-        <local:Item Key="item02B2" Value="Item 690"/>
-        <local:Item Key="item02B3" Value="Item 691"/>
-        <local:Item Key="item02B4" Value="Item 692"/>
-        <local:Item Key="item02B5" Value="Item 693"/>
-        <local:Item Key="item02B6" Value="Item 694"/>
-        <local:Item Key="item02B7" Value="Item 695"/>
-        <local:Item Key="item02B8" Value="Item 696"/>
-        <local:Item Key="item02B9" Value="Item 697"/>
-        <local:Item Key="item02BA" Value="Item 698"/>
-        <local:Item Key="item02BB" Value="Item 699"/>
-        <local:Item Key="item02BC" Value="Item 700"/>
-        <local:Item Key="item02BD" Value="Item 701"/>
-        <local:Item Key="item02BE" Value="Item 702"/>
-        <local:Item Key="item02BF" Value="Item 703"/>
-        <local:Item Key="item02C0" Value="Item 704"/>
-        <local:Item Key="item02C1" Value="Item 705"/>
-        <local:Item Key="item02C2" Value="Item 706"/>
-        <local:Item Key="item02C3" Value="Item 707"/>
-        <local:Item Key="item02C4" Value="Item 708"/>
-        <local:Item Key="item02C5" Value="Item 709"/>
-        <local:Item Key="item02C6" Value="Item 710"/>
-        <local:Item Key="item02C7" Value="Item 711"/>
-        <local:Item Key="item02C8" Value="Item 712"/>
-        <local:Item Key="item02C9" Value="Item 713"/>
-        <local:Item Key="item02CA" Value="Item 714"/>
-        <local:Item Key="item02CB" Value="Item 715"/>
-        <local:Item Key="item02CC" Value="Item 716"/>
-        <local:Item Key="item02CD" Value="Item 717"/>
-        <local:Item Key="item02CE" Value="Item 718"/>
-        <local:Item Key="item02CF" Value="Item 719"/>
-        <local:Item Key="item02D0" Value="Item 720"/>
-        <local:Item Key="item02D1" Value="Item 721"/>
-        <local:Item Key="item02D2" Value="Item 722"/>
-        <local:Item Key="item02D3" Value="Item 723"/>
-        <local:Item Key="item02D4" Value="Item 724"/>
-        <local:Item Key="item02D5" Value="Item 725"/>
-        <local:Item Key="item02D6" Value="Item 726"/>
-        <local:Item Key="item02D7" Value="Item 727"/>
-        <local:Item Key="item02D8" Value="Item 728"/>
-        <local:Item Key="item02D9" Value="Item 729"/>
-        <local:Item Key="item02DA" Value="Item 730"/>
-        <local:Item Key="item02DB" Value="Item 731"/>
-        <local:Item Key="item02DC" Value="Item 732"/>
-        <local:Item Key="item02DD" Value="Item 733"/>
-        <local:Item Key="item02DE" Value="Item 734"/>
-        <local:Item Key="item02DF" Value="Item 735"/>
-        <local:Item Key="item02E0" Value="Item 736"/>
-        <local:Item Key="item02E1" Value="Item 737"/>
-        <local:Item Key="item02E2" Value="Item 738"/>
-        <local:Item Key="item02E3" Value="Item 739"/>
-        <local:Item Key="item02E4" Value="Item 740"/>
-        <local:Item Key="item02E5" Value="Item 741"/>
-        <local:Item Key="item02E6" Value="Item 742"/>
-        <local:Item Key="item02E7" Value="Item 743"/>
-        <local:Item Key="item02E8" Value="Item 744"/>
-        <local:Item Key="item02E9" Value="Item 745"/>
-        <local:Item Key="item02EA" Value="Item 746"/>
-        <local:Item Key="item02EB" Value="Item 747"/>
-        <local:Item Key="item02EC" Value="Item 748"/>
-        <local:Item Key="item02ED" Value="Item 749"/>
-        <local:Item Key="item02EE" Value="Item 750"/>
-        <local:Item Key="item02EF" Value="Item 751"/>
-        <local:Item Key="item02F0" Value="Item 752"/>
-        <local:Item Key="item02F1" Value="Item 753"/>
-        <local:Item Key="item02F2" Value="Item 754"/>
-        <local:Item Key="item02F3" Value="Item 755"/>
-        <local:Item Key="item02F4" Value="Item 756"/>
-        <local:Item Key="item02F5" Value="Item 757"/>
-        <local:Item Key="item02F6" Value="Item 758"/>
-        <local:Item Key="item02F7" Value="Item 759"/>
-        <local:Item Key="item02F8" Value="Item 760"/>
-        <local:Item Key="item02F9" Value="Item 761"/>
-        <local:Item Key="item02FA" Value="Item 762"/>
-        <local:Item Key="item02FB" Value="Item 763"/>
-        <local:Item Key="item02FC" Value="Item 764"/>
-        <local:Item Key="item02FD" Value="Item 765"/>
-        <local:Item Key="item02FE" Value="Item 766"/>
-        <local:Item Key="item02FF" Value="Item 767"/>
-        <local:Item Key="item0300" Value="Item 768"/>
+        <local:Item Key="item0201" Value="Vaal Hazak Gem"/>
+        <local:Item Key="item0202" Value="Teostra Carapace"/>
+        <local:Item Key="item0203" Value="Teostra Mane"/>
+        <local:Item Key="item0204" Value="Teostra Tail"/>
+        <local:Item Key="item0205" Value="Teostra Horn+"/>
+        <local:Item Key="item0206" Value="Fire Dragon Scale+"/>
+        <local:Item Key="item0207" Value="Teostra Claw+"/>
+        <local:Item Key="item0208" Value="Teostra Webbing"/>
+        <local:Item Key="item0209" Value="Teostra Powder"/>
+        <local:Item Key="item020A" Value="Teostra Gem"/>
+        <local:Item Key="item020B" Value="Daora Carapace"/>
+        <local:Item Key="item020C" Value="Daora Dragon Scale+"/>
+        <local:Item Key="item020D" Value="Daora Webbing"/>
+        <local:Item Key="item020E" Value="Daora Horn+"/>
+        <local:Item Key="item020F" Value="Daora Tail"/>
+        <local:Item Key="item0210" Value="Daora Claw+"/>
+        <local:Item Key="item0211" Value="Daora Gem"/>
+        <local:Item Key="item0212" Value="Xeno'jiva Soulscale"/>
+        <local:Item Key="item0213" Value="Xeno'jiva Shell"/>
+        <local:Item Key="item0214" Value="Xeno'jiva Veil"/>
+        <local:Item Key="item0215" Value="Xeno'jiva Tail"/>
+        <local:Item Key="item0216" Value="Xeno'jiva Horn"/>
+        <local:Item Key="item0217" Value="Xeno'jiva Claw"/>
+        <local:Item Key="item0218" Value="Xeno'jiva Wing"/>
+        <local:Item Key="item0219" Value="Xeno'jiva Crystal"/>
+        <local:Item Key="item021A" Value="Xeno'jiva Gem"/>
+        <local:Item Key="item021B" Value="??? Scale"/>
+        <local:Item Key="item021C" Value="??? Shell"/>
+        <local:Item Key="item021D" Value="??? Membrane"/>
+        <local:Item Key="item021E" Value="??? Tail"/>
+        <local:Item Key="item021F" Value="??? Horn"/>
+        <local:Item Key="item0220" Value="??? Claw"/>
+        <local:Item Key="item0221" Value="??? Wing"/>
+        <local:Item Key="item0222" Value="??? Crystal"/>
+        <local:Item Key="item0223" Value="??? Gem"/>
+        <local:Item Key="item0224" Value="Mysterious Feystone"/>
+        <local:Item Key="item0225" Value="Glowing Feystone"/>
+        <local:Item Key="item0226" Value="Worn Feystone"/>
+        <local:Item Key="item0227" Value="Warped Feystone"/>
+        <local:Item Key="item0228" Value="Sullied Streamstone"/>
+        <local:Item Key="item0229" Value="Shining Streamstone"/>
+        <local:Item Key="item022A" Value="Streamstone Shard"/>
+        <local:Item Key="item022B" Value="Streamstone"/>
+        <local:Item Key="item022C" Value="Gleaming Streamstone"/>
+        <local:Item Key="item022D" Value="Warrior's Streamstone: Sword"/>
+        <local:Item Key="item022E" Value="Warrior's Streamstone: Blade"/>
+        <local:Item Key="item022F" Value="Warrior's Streamstone: Hammer"/>
+        <local:Item Key="item0230" Value="Warrior's Streamstone: Lance"/>
+        <local:Item Key="item0231" Value="Warrior's Streamstone: Axe"/>
+        <local:Item Key="item0232" Value="Warrior's Streamstone: Shaft"/>
+        <local:Item Key="item0233" Value="Warrior's Streamstone: Ranged"/>
+        <local:Item Key="item0234" Value="Hero's Streamstone: Sword"/>
+        <local:Item Key="item0235" Value="Hero's Streamstone: Blade"/>
+        <local:Item Key="item0236" Value="Hero's Streamstone: Hammer"/>
+        <local:Item Key="item0237" Value="Hero's Streamstone: Lance"/>
+        <local:Item Key="item0238" Value="Hero's Streamstone: Axe"/>
+        <local:Item Key="item0239" Value="Hero's Streamstone: Shaft"/>
+        <local:Item Key="item023A" Value="Hero's Streamstone: Ranged"/>
+        <local:Item Key="item023B" Value="Voucher"/>
+        <local:Item Key="item023C" Value="First Wyverian Print"/>
+        <local:Item Key="item023D" Value="Deluxe First Wyverian Print"/>
+        <local:Item Key="item023E" Value="Steel Wyverian Print"/>
+        <local:Item Key="item023F" Value="Silver Wyverian Print"/>
+        <local:Item Key="item0240" Value="Gold Wyverian Print"/>
+        <local:Item Key="item0241" Value="Commendation"/>
+        <local:Item Key="item0242" Value="High Commendation"/>
+        <local:Item Key="item0243" Value="Research Commission Ticket"/>
+        <local:Item Key="item0244" Value="Pukei Coin"/>
+        <local:Item Key="item0245" Value="Kulu Coin"/>
+        <local:Item Key="item0246" Value="Rathian Coin"/>
+        <local:Item Key="item0247" Value="Tzitzi Coin"/>
+        <local:Item Key="item0248" Value="Barroth Coin"/>
+        <local:Item Key="item0249" Value="Gama Coin"/>
+        <local:Item Key="item024A" Value="Rathalos Coin"/>
+        <local:Item Key="item024B" Value="Brute Coin"/>
+        <local:Item Key="item024C" Value="Flying Coin"/>
+        <local:Item Key="item024D" Value="Pinnacle Coin"/>
+        <local:Item Key="item024E" Value="Hunter King Coin"/>
+        <local:Item Key="item024F" Value="Ace Hunter Coin"/>
+        <local:Item Key="item0250" Value="Steel Egg"/>
+        <local:Item Key="item0251" Value="Silver Egg"/>
+        <local:Item Key="item0252" Value="Golden Egg"/>
+        <local:Item Key="item0253" Value="Chipped Scale"/>
+        <local:Item Key="item0254" Value="Large Scale"/>
+        <local:Item Key="item0255" Value="Beautiful Scale"/>
+        <local:Item Key="item0256" Value="Lustrous Scale"/>
+        <local:Item Key="item0257" Value="Glimmering Scale"/>
+        <local:Item Key="item0258" Value="Bhernastone"/>
+        <local:Item Key="item0259" Value="Dundormarin"/>
+        <local:Item Key="item025A" Value="Loc Lac Ore"/>
+        <local:Item Key="item025B" Value="Val Habar Quartz"/>
+        <local:Item Key="item025C" Value="Minegardenite"/>
+        <local:Item Key="item025D" Value="Golden Scale"/>
+        <local:Item Key="item025E" Value="Golden Scale+"/>
+        <local:Item Key="item025F" Value="Platinum Scale"/>
+        <local:Item Key="item0260" Value="Platinum Scale+"/>
+        <local:Item Key="item0261" Value="Gilded Scale"/>
+        <local:Item Key="item0262" Value="Gilded Scale+"/>
+        <local:Item Key="item0263" Value="White Liver"/>
+        <local:Item Key="item0264" Value="Wyvern Tear"/>
+        <local:Item Key="item0265" Value="Large Wyvern Tear"/>
+        <local:Item Key="item0266" Value="Dragon Treasure"/>
+        <local:Item Key="item0267" Value="Old Dragon Treasure"/>
+        <local:Item Key="item0268" Value="Sunbloom"/>
+        <local:Item Key="item0269" Value="Shinebloom"/>
+        <local:Item Key="item026A" Value="Goldbloom"/>
+        <local:Item Key="item026B" Value="Gourmet Shroomcap"/>
+        <local:Item Key="item026C" Value="Exquisite Shroomcap"/>
+        <local:Item Key="item026D" Value="Spirit Shroomcap"/>
+        <local:Item Key="item026E" Value="Bauble Cactus"/>
+        <local:Item Key="item026F" Value="Jewel Cactus"/>
+        <local:Item Key="item0270" Value="Kingly Cactus"/>
+        <local:Item Key="item0271" Value="Hardfruit"/>
+        <local:Item Key="item0272" Value="Rockfruit"/>
+        <local:Item Key="item0273" Value="Wildfruit"/>
+        <local:Item Key="item0274" Value="Super Abalone"/>
+        <local:Item Key="item0275" Value="Choice Abalone"/>
+        <local:Item Key="item0276" Value="Precious Abalone"/>
+        <local:Item Key="item0277" Value="Light Pearl"/>
+        <local:Item Key="item0278" Value="Deep Pearl"/>
+        <local:Item Key="item0279" Value="Innocent Pearl"/>
+        <local:Item Key="item027A" Value="Forgotten Fossil"/>
+        <local:Item Key="item027B" Value="Legendary Fossil"/>
+        <local:Item Key="item027C" Value="Mythical Fossil"/>
+        <local:Item Key="item027D" Value="Underground Fruit"/>
+        <local:Item Key="item027E" Value="Tainted Fruit"/>
+        <local:Item Key="item027F" Value="Elysian Fruit"/>
+        <local:Item Key="item0280" Value="Gaia Amber"/>
+        <local:Item Key="item0281" Value="Dragonvein Amber"/>
+        <local:Item Key="item0282" Value="Ancient Amber"/>
+        <local:Item Key="item0283" Value="Blue Beryl"/>
+        <local:Item Key="item0284" Value="True Beryl"/>
+        <local:Item Key="item0285" Value="Abyssal Beryl"/>
+        <local:Item Key="item0286" Value="Sunkissed Grass"/>
+        <local:Item Key="item0287" Value="Moonlit Mushroom"/>
+        <local:Item Key="item0288" Value="Dragonbloom"/>
+        <local:Item Key="item0289" Value="Divineapple"/>
+        <local:Item Key="item028A" Value="Violet Abalone"/>
+        <local:Item Key="item028B" Value="Platinum Pearl"/>
+        <local:Item Key="item028C" Value="Wicked Fossil"/>
+        <local:Item Key="item028D" Value="Heavenberry"/>
+        <local:Item Key="item028E" Value="Twilight Stone"/>
+        <local:Item Key="item028F" Value="Noahstone"/>
+        <local:Item Key="item0290" Value="Wyvern Egg"/>
+        <local:Item Key="item0291" Value="Herbivore Egg"/>
+        <local:Item Key="item0292" Value="Lump of Meat"/>
+        <local:Item Key="item0293" Value="Shepherd Hare"/>
+        <local:Item Key="item0294" Value="Pilot Hare"/>
+        <local:Item Key="item0295" Value="Woodland Pteryx"/>
+        <local:Item Key="item0296" Value="Forest Pteryx"/>
+        <local:Item Key="item0297" Value="Cobalt Flutterfly"/>
+        <local:Item Key="item0298" Value="Phantom Flutterfly"/>
+        <local:Item Key="item0299" Value="Climbing Joyperch"/>
+        <local:Item Key="item029A" Value="Forest Gekko"/>
+        <local:Item Key="item029B" Value="Wildspire Gekko"/>
+        <local:Item Key="item029C" Value="Gloom Gekko"/>
+        <local:Item Key="item029D" Value="Moonlight Gekko"/>
+        <local:Item Key="item029E" Value="Vaporonid"/>
+        <local:Item Key="item029F" Value="Scavantula"/>
+        <local:Item Key="item02A0" Value="Revolture"/>
+        <local:Item Key="item02A1" Value="Blissbill"/>
+        <local:Item Key="item02A2" Value="Omenfly"/>
+        <local:Item Key="item02A3" Value="Augurfly"/>
+        <local:Item Key="item02A4" Value="Scalebat"/>
+        <local:Item Key="item02A5" Value="Dung Beetle"/>
+        <local:Item Key="item02A6" Value="Bomb Beetle"/>
+        <local:Item Key="item02A7" Value="Pink Parexus"/>
+        <local:Item Key="item02A8" Value="Great Pink Parexus"/>
+        <local:Item Key="item02A9" Value="Burst Arowana"/>
+        <local:Item Key="item02AA" Value="Bomb Arowana"/>
+        <local:Item Key="item02AB" Value="Great Burst Arowana"/>
+        <local:Item Key="item02AC" Value="Great Bomb Arowana"/>
+        <local:Item Key="item02AD" Value="Elegant Coralbird"/>
+        <local:Item Key="item02AE" Value="Dapper Coralbird"/>
+        <local:Item Key="item02AF" Value="Andangler"/>
+        <local:Item Key="item02B0" Value="Downy Crake"/>
+        <local:Item Key="item02B1" Value="Bristly Crake"/>
+        <local:Item Key="item02B2" Value="Hopguppy"/>
+        <local:Item Key="item02B3" Value="Petricanths"/>
+        <local:Item Key="item02B4" Value="Paratoad"/>
+        <local:Item Key="item02B5" Value="Sleeptoad"/>
+        <local:Item Key="item02B6" Value="Nitrotoad"/>
+        <local:Item Key="item02B7" Value="Wiggler"/>
+        <local:Item Key="item02B8" Value="Wiggler Queen"/>
+        <local:Item Key="item02B9" Value="Vigorwasp"/>
+        <local:Item Key="item02BA" Value="Giant Vigorwasp"/>
+        <local:Item Key="item02BB" Value="Flying Meduso"/>
+        <local:Item Key="item02BC" Value="Carrier Ant"/>
+        <local:Item Key="item02BD" Value="Hercudrome"/>
+        <local:Item Key="item02BE" Value="Gold Hercudrome"/>
+        <local:Item Key="item02BF" Value="Prism Hercudrome"/>
+        <local:Item Key="item02C0" Value="Emperor Hopper"/>
+        <local:Item Key="item02C1" Value="Tyrant Hopper"/>
+        <local:Item Key="item02C2" Value="Flashfly"/>
+        <local:Item Key="item02C3" Value="Grandfather Mantagrell"/>
+        <local:Item Key="item02C4" Value="Iron Helmcrab"/>
+        <local:Item Key="item02C5" Value="Soldier Helmcrab"/>
+        <local:Item Key="item02C6" Value="Emerald Helmcrab"/>
+        <local:Item Key="item02C7" Value="Whetfish"/>
+        <local:Item Key="item02C8" Value="Great Whetfish"/>
+        <local:Item Key="item02C9" Value="Gastronome Tuna"/>
+        <local:Item Key="item02CA" Value="Great Gastronome Tuna"/>
+        <local:Item Key="item02CB" Value="King Marlin"/>
+        <local:Item Key="item02CC" Value="Great King Marlin"/>
+        <local:Item Key="item02CD" Value="Goldenfish"/>
+        <local:Item Key="item02CE" Value="Platinumfish"/>
+        <local:Item Key="item02CF" Value="Great Goldenfish"/>
+        <local:Item Key="item02D0" Value="Great Platinumfish"/>
+        <local:Item Key="item02D1" Value="Goldenfry"/>
+        <local:Item Key="item02D2" Value="Great Goldenfry"/>
+        <local:Item Key="item02D3" Value="Sushifish"/>
+        <local:Item Key="item02D4" Value="Great Sushifish"/>
+        <local:Item Key="item02D5" Value="Gunpowderfish"/>
+        <local:Item Key="item02D6" Value="Great Gunpowderfish"/>
+        <local:Item Key="item02D7" Value="Antidote Jewel 1"/>
+        <local:Item Key="item02D8" Value="Antipara Jewel 1"/>
+        <local:Item Key="item02D9" Value="Pep Jewel 1"/>
+        <local:Item Key="item02DA" Value="Steadfast Jewel 1"/>
+        <local:Item Key="item02DB" Value="Antiblast Jewel 1"/>
+        <local:Item Key="item02DC" Value="Suture Jewel 1"/>
+        <local:Item Key="item02DD" Value="Def Lock Jewel 1"/>
+        <local:Item Key="item02DE" Value="Earplug Jewel 3"/>
+        <local:Item Key="item02DF" Value="Wind Resist Jewel 2"/>
+        <local:Item Key="item02E0" Value="Footing Jewel 2"/>
+        <local:Item Key="item02E1" Value="Fertilizer Jewel 1"/>
+        <local:Item Key="item02E2" Value="Heat Resist Jewel 2"/>
+        <local:Item Key="item02E3" Value="Attack Jewel 1"/>
+        <local:Item Key="item02E4" Value="Defense Jewel 1"/>
+        <local:Item Key="item02E5" Value="Vitality Jewel 1"/>
+        <local:Item Key="item02E6" Value="Recovery Jewel 1"/>
+        <local:Item Key="item02E7" Value="Fire Res Jewel 1"/>
+        <local:Item Key="item02E8" Value="Water Res Jewel 1"/>
+        <local:Item Key="item02E9" Value="Ice Res Jewel 1"/>
+        <local:Item Key="item02EA" Value="Thunder Res Jewel 1"/>
+        <local:Item Key="item02EB" Value="Dragon Res Jewel 1"/>
+        <local:Item Key="item02EC" Value="Resistor Jewel 1"/>
+        <local:Item Key="item02ED" Value="Blaze Jewel 1"/>
+        <local:Item Key="item02EE" Value="Stream Jewel 1"/>
+        <local:Item Key="item02EF" Value="Frost Jewel 1"/>
+        <local:Item Key="item02F0" Value="Bolt Jewel 1"/>
+        <local:Item Key="item02F1" Value="Dragon Jewel 1"/>
+        <local:Item Key="item02F2" Value="Venmon Jewel 1"/>
+        <local:Item Key="item02F3" Value="Paralyzer Jewel 1"/>
+        <local:Item Key="item02F4" Value="Sleep Jewel 1"/>
+        <local:Item Key="item02F5" Value="Blast Jewel 1"/>
+        <local:Item Key="item02F6" Value="Poisoncoat Jewel 3"/>
+        <local:Item Key="item02F7" Value="Paracoat Jewel 3"/>
+        <local:Item Key="item02F8" Value="Sleepcoat Jewel 3"/>
+        <local:Item Key="item02F9" Value="Blastcoat Jewel 3"/>
+        <local:Item Key="item02FA" Value="Powercoat Jewel 3"/>
+        <local:Item Key="item02FB" Value="Release Jewel 3"/>
+        <local:Item Key="item02FC" Value="Expert Jewel 1"/>
+        <local:Item Key="item02FD" Value="Critical Jewel 2"/>
+        <local:Item Key="item02FE" Value="Tenderizer Jewel 2"/>
+        <local:Item Key="item02FF" Value="Charger Jewel 2"/>
+        <local:Item Key="item0300" Value="Handicraft Jewel 3"/>
         <local:Item Key="item0301" Value="Item 769"/>
         <local:Item Key="item0302" Value="Item 770"/>
         <local:Item Key="item0303" Value="Item 771"/>
