@@ -18,262 +18,262 @@
     <!--itemlist-->
     <x:Array Type="local:Item" x:Key="itemsList" >
         <local:Item Key="item0000" Value="----------"/>
-        <local:Item Key="item0001" Value="Item 1"/>
-        <local:Item Key="item0002" Value="Item 2"/>
-        <local:Item Key="item0003" Value="Item 3"/>
-        <local:Item Key="item0004" Value="Item 4"/>
-        <local:Item Key="item0005" Value="Item 5"/>
-        <local:Item Key="item0006" Value="Item 6"/>
-        <local:Item Key="item0007" Value="Item 7"/>
-        <local:Item Key="item0008" Value="Item 8"/>
-        <local:Item Key="item0009" Value="Item 9"/>
-        <local:Item Key="item000A" Value="Item 10"/>
-        <local:Item Key="item000B" Value="Item 11"/>
-        <local:Item Key="item000C" Value="Item 12"/>
-        <local:Item Key="item000D" Value="Item 13"/>
-        <local:Item Key="item000E" Value="Item 14"/>
-        <local:Item Key="item000F" Value="Item 15"/>
-        <local:Item Key="item0010" Value="Item 16"/>
-        <local:Item Key="item0011" Value="Item 17"/>
-        <local:Item Key="item0012" Value="Item 18"/>
-        <local:Item Key="item0013" Value="Item 19"/>
-        <local:Item Key="item0014" Value="Item 20"/>
-        <local:Item Key="item0015" Value="Item 21"/>
-        <local:Item Key="item0016" Value="Item 22"/>
-        <local:Item Key="item0017" Value="Item 23"/>
-        <local:Item Key="item0018" Value="Item 24"/>
-        <local:Item Key="item0019" Value="Item 25"/>
-        <local:Item Key="item001A" Value="Item 26"/>
-        <local:Item Key="item001B" Value="Item 27"/>
-        <local:Item Key="item001C" Value="Item 28"/>
-        <local:Item Key="item001D" Value="Item 29"/>
-        <local:Item Key="item001E" Value="Item 30"/>
-        <local:Item Key="item001F" Value="Item 31"/>
-        <local:Item Key="item0020" Value="Item 32"/>
-        <local:Item Key="item0021" Value="Item 33"/>
-        <local:Item Key="item0022" Value="Item 34"/>
-        <local:Item Key="item0023" Value="Item 35"/>
-        <local:Item Key="item0024" Value="Item 36"/>
-        <local:Item Key="item0025" Value="Item 37"/>
-        <local:Item Key="item0026" Value="Item 38"/>
-        <local:Item Key="item0027" Value="Item 39"/>
-        <local:Item Key="item0028" Value="Item 40"/>
-        <local:Item Key="item0029" Value="Item 41"/>
-        <local:Item Key="item002A" Value="Item 42"/>
-        <local:Item Key="item002B" Value="Item 43"/>
-        <local:Item Key="item002C" Value="Item 44"/>
-        <local:Item Key="item002D" Value="Item 45"/>
-        <local:Item Key="item002E" Value="Item 46"/>
-        <local:Item Key="item002F" Value="Item 47"/>
-        <local:Item Key="item0030" Value="Item 48"/>
-        <local:Item Key="item0031" Value="Item 49"/>
-        <local:Item Key="item0032" Value="Item 50"/>
-        <local:Item Key="item0033" Value="Item 51"/>
-        <local:Item Key="item0034" Value="Item 52"/>
-        <local:Item Key="item0035" Value="Item 53"/>
-        <local:Item Key="item0036" Value="Item 54"/>
-        <local:Item Key="item0037" Value="Item 55"/>
-        <local:Item Key="item0038" Value="Item 56"/>
-        <local:Item Key="item0039" Value="Item 57"/>
-        <local:Item Key="item003A" Value="Item 58"/>
-        <local:Item Key="item003B" Value="Item 59"/>
-        <local:Item Key="item003C" Value="Item 60"/>
-        <local:Item Key="item003D" Value="Item 61"/>
-        <local:Item Key="item003E" Value="Item 62"/>
-        <local:Item Key="item003F" Value="Item 63"/>
-        <local:Item Key="item0040" Value="Item 64"/>
-        <local:Item Key="item0041" Value="Item 65"/>
-        <local:Item Key="item0042" Value="Item 66"/>
-        <local:Item Key="item0043" Value="Item 67"/>
-        <local:Item Key="item0044" Value="Item 68"/>
-        <local:Item Key="item0045" Value="Item 69"/>
-        <local:Item Key="item0046" Value="Item 70"/>
-        <local:Item Key="item0047" Value="Item 71"/>
-        <local:Item Key="item0048" Value="Item 72"/>
-        <local:Item Key="item0049" Value="Item 73"/>
-        <local:Item Key="item004A" Value="Item 74"/>
-        <local:Item Key="item004B" Value="Item 75"/>
-        <local:Item Key="item004C" Value="Item 76"/>
-        <local:Item Key="item004D" Value="Item 77"/>
-        <local:Item Key="item004E" Value="Item 78"/>
-        <local:Item Key="item004F" Value="Item 79"/>
-        <local:Item Key="item0050" Value="Item 80"/>
-        <local:Item Key="item0051" Value="Item 81"/>
-        <local:Item Key="item0052" Value="Item 82"/>
-        <local:Item Key="item0053" Value="Item 83"/>
-        <local:Item Key="item0054" Value="Item 84"/>
-        <local:Item Key="item0055" Value="Item 85"/>
-        <local:Item Key="item0056" Value="Item 86"/>
-        <local:Item Key="item0057" Value="Item 87"/>
-        <local:Item Key="item0058" Value="Item 88"/>
-        <local:Item Key="item0059" Value="Item 89"/>
-        <local:Item Key="item005A" Value="Item 90"/>
-        <local:Item Key="item005B" Value="Item 91"/>
-        <local:Item Key="item005C" Value="Item 92"/>
-        <local:Item Key="item005D" Value="Item 93"/>
-        <local:Item Key="item005E" Value="Item 94"/>
-        <local:Item Key="item005F" Value="Item 95"/>
-        <local:Item Key="item0060" Value="Item 96"/>
-        <local:Item Key="item0061" Value="Item 97"/>
-        <local:Item Key="item0062" Value="Item 98"/>
-        <local:Item Key="item0063" Value="Item 99"/>
-        <local:Item Key="item0064" Value="Item 100"/>
-        <local:Item Key="item0065" Value="Item 101"/>
-        <local:Item Key="item0066" Value="Item 102"/>
-        <local:Item Key="item0067" Value="Item 103"/>
-        <local:Item Key="item0068" Value="Item 104"/>
-        <local:Item Key="item0069" Value="Item 105"/>
-        <local:Item Key="item006A" Value="Item 106"/>
-        <local:Item Key="item006B" Value="Item 107"/>
-        <local:Item Key="item006C" Value="Item 108"/>
-        <local:Item Key="item006D" Value="Item 109"/>
-        <local:Item Key="item006E" Value="Item 110"/>
-        <local:Item Key="item006F" Value="Item 111"/>
-        <local:Item Key="item0070" Value="Item 112"/>
-        <local:Item Key="item0071" Value="Item 113"/>
-        <local:Item Key="item0072" Value="Item 114"/>
-        <local:Item Key="item0073" Value="Item 115"/>
-        <local:Item Key="item0074" Value="Item 116"/>
-        <local:Item Key="item0075" Value="Item 117"/>
-        <local:Item Key="item0076" Value="Item 118"/>
-        <local:Item Key="item0077" Value="Item 119"/>
-        <local:Item Key="item0078" Value="Item 120"/>
-        <local:Item Key="item0079" Value="Item 121"/>
-        <local:Item Key="item007A" Value="Item 122"/>
-        <local:Item Key="item007B" Value="Item 123"/>
-        <local:Item Key="item007C" Value="Item 124"/>
-        <local:Item Key="item007D" Value="Item 125"/>
-        <local:Item Key="item007E" Value="Item 126"/>
-        <local:Item Key="item007F" Value="Item 127"/>
-        <local:Item Key="item0080" Value="Item 128"/>
-        <local:Item Key="item0081" Value="Item 129"/>
-        <local:Item Key="item0082" Value="Item 130"/>
-        <local:Item Key="item0083" Value="Item 131"/>
-        <local:Item Key="item0084" Value="Item 132"/>
-        <local:Item Key="item0085" Value="Item 133"/>
-        <local:Item Key="item0086" Value="Item 134"/>
-        <local:Item Key="item0087" Value="Item 135"/>
-        <local:Item Key="item0088" Value="Item 136"/>
-        <local:Item Key="item0089" Value="Item 137"/>
-        <local:Item Key="item008A" Value="Item 138"/>
-        <local:Item Key="item008B" Value="Item 139"/>
-        <local:Item Key="item008C" Value="Item 140"/>
-        <local:Item Key="item008D" Value="Item 141"/>
-        <local:Item Key="item008E" Value="Item 142"/>
-        <local:Item Key="item008F" Value="Item 143"/>
-        <local:Item Key="item0090" Value="Item 144"/>
-        <local:Item Key="item0091" Value="Item 145"/>
-        <local:Item Key="item0092" Value="Item 146"/>
-        <local:Item Key="item0093" Value="Item 147"/>
-        <local:Item Key="item0094" Value="Item 148"/>
-        <local:Item Key="item0095" Value="Item 149"/>
-        <local:Item Key="item0096" Value="Item 150"/>
-        <local:Item Key="item0097" Value="Item 151"/>
-        <local:Item Key="item0098" Value="Item 152"/>
-        <local:Item Key="item0099" Value="Item 153"/>
-        <local:Item Key="item009A" Value="Item 154"/>
-        <local:Item Key="item009B" Value="Item 155"/>
-        <local:Item Key="item009C" Value="Item 156"/>
-        <local:Item Key="item009D" Value="Item 157"/>
-        <local:Item Key="item009E" Value="Item 158"/>
-        <local:Item Key="item009F" Value="Item 159"/>
-        <local:Item Key="item00A0" Value="Item 160"/>
-        <local:Item Key="item00A1" Value="Item 161"/>
-        <local:Item Key="item00A2" Value="Item 162"/>
-        <local:Item Key="item00A3" Value="Item 163"/>
-        <local:Item Key="item00A4" Value="Item 164"/>
-        <local:Item Key="item00A5" Value="Item 165"/>
-        <local:Item Key="item00A6" Value="Item 166"/>
-        <local:Item Key="item00A7" Value="Item 167"/>
-        <local:Item Key="item00A8" Value="Item 168"/>
-        <local:Item Key="item00A9" Value="Item 169"/>
-        <local:Item Key="item00AA" Value="Item 170"/>
-        <local:Item Key="item00AB" Value="Item 171"/>
-        <local:Item Key="item00AC" Value="Item 172"/>
-        <local:Item Key="item00AD" Value="Item 173"/>
-        <local:Item Key="item00AE" Value="Item 174"/>
-        <local:Item Key="item00AF" Value="Item 175"/>
-        <local:Item Key="item00B0" Value="Item 176"/>
-        <local:Item Key="item00B1" Value="Item 177"/>
-        <local:Item Key="item00B2" Value="Item 178"/>
-        <local:Item Key="item00B3" Value="Item 179"/>
-        <local:Item Key="item00B4" Value="Item 180"/>
-        <local:Item Key="item00B5" Value="Item 181"/>
-        <local:Item Key="item00B6" Value="Item 182"/>
-        <local:Item Key="item00B7" Value="Item 183"/>
-        <local:Item Key="item00B8" Value="Item 184"/>
-        <local:Item Key="item00B9" Value="Item 185"/>
-        <local:Item Key="item00BA" Value="Item 186"/>
-        <local:Item Key="item00BB" Value="Item 187"/>
-        <local:Item Key="item00BC" Value="Item 188"/>
-        <local:Item Key="item00BD" Value="Item 189"/>
-        <local:Item Key="item00BE" Value="Item 190"/>
-        <local:Item Key="item00BF" Value="Item 191"/>
-        <local:Item Key="item00C0" Value="Item 192"/>
-        <local:Item Key="item00C1" Value="Item 193"/>
-        <local:Item Key="item00C2" Value="Item 194"/>
-        <local:Item Key="item00C3" Value="Item 195"/>
-        <local:Item Key="item00C4" Value="Item 196"/>
-        <local:Item Key="item00C5" Value="Item 197"/>
-        <local:Item Key="item00C6" Value="Item 198"/>
-        <local:Item Key="item00C7" Value="Item 199"/>
-        <local:Item Key="item00C8" Value="Item 200"/>
-        <local:Item Key="item00C9" Value="Item 201"/>
-        <local:Item Key="item00CA" Value="Item 202"/>
-        <local:Item Key="item00CB" Value="Item 203"/>
-        <local:Item Key="item00CC" Value="Item 204"/>
-        <local:Item Key="item00CD" Value="Item 205"/>
-        <local:Item Key="item00CE" Value="Item 206"/>
-        <local:Item Key="item00CF" Value="Item 207"/>
-        <local:Item Key="item00D0" Value="Item 208"/>
-        <local:Item Key="item00D1" Value="Item 209"/>
-        <local:Item Key="item00D2" Value="Item 210"/>
-        <local:Item Key="item00D3" Value="Item 211"/>
-        <local:Item Key="item00D4" Value="Item 212"/>
-        <local:Item Key="item00D5" Value="Item 213"/>
-        <local:Item Key="item00D6" Value="Item 214"/>
-        <local:Item Key="item00D7" Value="Item 215"/>
-        <local:Item Key="item00D8" Value="Item 216"/>
-        <local:Item Key="item00D9" Value="Item 217"/>
-        <local:Item Key="item00DA" Value="Item 218"/>
-        <local:Item Key="item00DB" Value="Item 219"/>
-        <local:Item Key="item00DC" Value="Item 220"/>
-        <local:Item Key="item00DD" Value="Item 221"/>
-        <local:Item Key="item00DE" Value="Item 222"/>
-        <local:Item Key="item00DF" Value="Item 223"/>
-        <local:Item Key="item00E0" Value="Item 224"/>
-        <local:Item Key="item00E1" Value="Item 225"/>
-        <local:Item Key="item00E2" Value="Item 226"/>
-        <local:Item Key="item00E3" Value="Item 227"/>
-        <local:Item Key="item00E4" Value="Item 228"/>
-        <local:Item Key="item00E5" Value="Item 229"/>
-        <local:Item Key="item00E6" Value="Item 230"/>
-        <local:Item Key="item00E7" Value="Item 231"/>
-        <local:Item Key="item00E8" Value="Item 232"/>
-        <local:Item Key="item00E9" Value="Item 233"/>
-        <local:Item Key="item00EA" Value="Item 234"/>
-        <local:Item Key="item00EB" Value="Item 235"/>
-        <local:Item Key="item00EC" Value="Item 236"/>
-        <local:Item Key="item00ED" Value="Item 237"/>
-        <local:Item Key="item00EE" Value="Item 238"/>
-        <local:Item Key="item00EF" Value="Item 239"/>
-        <local:Item Key="item00F0" Value="Item 240"/>
-        <local:Item Key="item00F1" Value="Item 241"/>
-        <local:Item Key="item00F2" Value="Item 242"/>
-        <local:Item Key="item00F3" Value="Item 243"/>
-        <local:Item Key="item00F4" Value="Item 244"/>
-        <local:Item Key="item00F5" Value="Item 245"/>
-        <local:Item Key="item00F6" Value="Item 246"/>
-        <local:Item Key="item00F7" Value="Item 247"/>
-        <local:Item Key="item00F8" Value="Item 248"/>
-        <local:Item Key="item00F9" Value="Item 249"/>
-        <local:Item Key="item00FA" Value="Item 250"/>
-        <local:Item Key="item00FB" Value="Item 251"/>
-        <local:Item Key="item00FC" Value="Item 252"/>
-        <local:Item Key="item00FD" Value="Item 253"/>
-        <local:Item Key="item00FE" Value="Item 254"/>
-        <local:Item Key="item00FF" Value="Item 255"/>
-        <local:Item Key="item0100" Value="Item 256"/>
+        <local:Item Key="item0001" Value="Potion"/>
+        <local:Item Key="item0002" Value="Mega Potion"/>
+        <local:Item Key="item0003" Value="Max Potion"/>
+        <local:Item Key="item0004" Value="Ancient Potion"/>
+        <local:Item Key="item0005" Value="Antidote"/>
+        <local:Item Key="item0006" Value="Herbal Medicine"/>
+        <local:Item Key="item0007" Value="Nulberry"/>
+        <local:Item Key="item0008" Value="Energy Drink"/>
+        <local:Item Key="item0009" Value="Ration"/>
+        <local:Item Key="item000A" Value="Rare Steak"/>
+        <local:Item Key="item000B" Value="Well-done Steak"/>
+        <local:Item Key="item000C" Value="Burnt Meat"/>
+        <local:Item Key="item000D" Value="Cool Drink"/>
+        <local:Item Key="item000E" Value="Nutrients"/>
+        <local:Item Key="item000F" Value="Mega Nutrients"/>
+        <local:Item Key="item0010" Value="Immunizer"/>
+        <local:Item Key="item0011" Value="Astera Jerky"/>
+        <local:Item Key="item0012" Value="Dash Juice"/>
+        <local:Item Key="item0013" Value="Mega Dash Juice"/>
+        <local:Item Key="item0014" Value="Might Seed"/>
+        <local:Item Key="item0015" Value="Demondrug"/>
+        <local:Item Key="item0016" Value="Mega Demondrug"/>
+        <local:Item Key="item0017" Value="Might Pill"/>
+        <local:Item Key="item0018" Value="Adamant Seed"/>
+        <local:Item Key="item0019" Value="Armorskin"/>
+        <local:Item Key="item001A" Value="Mega Armorskin"/>
+        <local:Item Key="item001B" Value="Adamant Pill"/>
+        <local:Item Key="item001C" Value="Lifepowder"/>
+        <local:Item Key="item001D" Value="Herbal Powder"/>
+        <local:Item Key="item001E" Value="Demon Powder"/>
+        <local:Item Key="item001F" Value="Hardshell Powder"/>
+        <local:Item Key="item0020" Value="Honey"/>
+        <local:Item Key="item0021" Value="Herb"/>
+        <local:Item Key="item0022" Value="Antidote Herb"/>
+        <local:Item Key="item0023" Value="Fire Herb"/>
+        <local:Item Key="item0024" Value="Flowfern"/>
+        <local:Item Key="item0025" Value="Snow Herb"/>
+        <local:Item Key="item0026" Value="Sleep Herb"/>
+        <local:Item Key="item0027" Value="Ivy"/>
+        <local:Item Key="item0028" Value="Smokenut"/>
+        <local:Item Key="item0029" Value="Dragonfell Berry"/>
+        <local:Item Key="item002A" Value="Blue Mushroom"/>
+        <local:Item Key="item002B" Value="Mandragora"/>
+        <local:Item Key="item002C" Value="Nitroshroom"/>
+        <local:Item Key="item002D" Value="Devil's Blight"/>
+        <local:Item Key="item002E" Value="Parashroom"/>
+        <local:Item Key="item002F" Value="Toadstool"/>
+        <local:Item Key="item0030" Value="Exciteshroom"/>
+        <local:Item Key="item0031" Value="Bitterbug"/>
+        <local:Item Key="item0032" Value="Flashbug"/>
+        <local:Item Key="item0033" Value="Godbug"/>
+        <local:Item Key="item0034" Value="Thunderbug"/>
+        <local:Item Key="item0035" Value="Baitbug"/>
+        <local:Item Key="item0036" Value="Kelbi Horn"/>
+        <local:Item Key="item0037" Value="Dash Extract"/>
+        <local:Item Key="item0038" Value="Nourishing Extract"/>
+        <local:Item Key="item0039" Value="Screamer Sac"/>
+        <local:Item Key="item003A" Value="Catalyst"/>
+        <local:Item Key="item003B" Value="Tranq Bomb"/>
+        <local:Item Key="item003C" Value="Flash Pod"/>
+        <local:Item Key="item003D" Value="Screamer Pod"/>
+        <local:Item Key="item003E" Value="Smoke Bomb"/>
+        <local:Item Key="item003F" Value="Poison Smoke Bomb"/>
+        <local:Item Key="item0040" Value="Farcaster"/>
+        <local:Item Key="item0041" Value="Raw Meat"/>
+        <local:Item Key="item0042" Value="Poisoned Meat"/>
+        <local:Item Key="item0043" Value="Tinged Meat"/>
+        <local:Item Key="item0044" Value="Drugged Meat"/>
+        <local:Item Key="item0045" Value="Gunpowder"/>
+        <local:Item Key="item0046" Value="Small Barrel"/>
+        <local:Item Key="item0047" Value="Barrel Bomb"/>
+        <local:Item Key="item0048" Value="Bounce Bomb"/>
+        <local:Item Key="item0049" Value="Mega Bounce Bomb"/>
+        <local:Item Key="item004A" Value="Large Barrel"/>
+        <local:Item Key="item004B" Value="Large Barrel Bomb"/>
+        <local:Item Key="item004C" Value="Mega Barrel Bomb"/>
+        <local:Item Key="item004D" Value="Spider Web"/>
+        <local:Item Key="item004E" Value="Net"/>
+        <local:Item Key="item004F" Value="Trap Tool"/>
+        <local:Item Key="item0050" Value="Pitfall Trap"/>
+        <local:Item Key="item0051" Value="Shock Trap"/>
+        <local:Item Key="item0052" Value="Rolled-up Dung"/>
+        <local:Item Key="item0053" Value="Dung"/>
+        <local:Item Key="item0054" Value="Dung Pod"/>
+        <local:Item Key="item0055" Value="Arowana Bait"/>
+        <local:Item Key="item0056" Value="Gunpowderfish Bait"/>
+        <local:Item Key="item0057" Value="Goldenfish Bait"/>
+        <local:Item Key="item0058" Value="Boomerang"/>
+        <local:Item Key="item0059" Value="Binoculars"/>
+        <local:Item Key="item005A" Value="Powercharm"/>
+        <local:Item Key="item005B" Value="Powertalon"/>
+        <local:Item Key="item005C" Value="Armorcharm"/>
+        <local:Item Key="item005D" Value="Armortalon"/>
+        <local:Item Key="item005E" Value="Needleberry"/>
+        <local:Item Key="item005F" Value="Blastnut"/>
+        <local:Item Key="item0060" Value="Dragonstrike Nut"/>
+        <local:Item Key="item0061" Value="Slashberry"/>
+        <local:Item Key="item0062" Value="Latchberry"/>
+        <local:Item Key="item0063" Value="Bomberry"/>
+        <local:Item Key="item0064" Value="Flamenut"/>
+        <local:Item Key="item0065" Value="Blazenut"/>
+        <local:Item Key="item0066" Value="Gunpowder Level 2"/>
+        <local:Item Key="item0067" Value="Gunpowder Level 3"/>
+        <local:Item Key="item0068" Value="Whetfish Fin"/>
+        <local:Item Key="item0069" Value="Whetfish Fin+"/>
+        <local:Item Key="item006A" Value="Sushifish Scale"/>
+        <local:Item Key="item006B" Value="Great Sushifish Scale"/>
+        <local:Item Key="item006C" Value="Gunpowderfish Scale"/>
+        <local:Item Key="item006D" Value="Great Gunpowderfish Scale"/>
+        <local:Item Key="item006E" Value="Burst Arowana Scale"/>
+        <local:Item Key="item006F" Value="Great Burst Arowana Scale"/>
+        <local:Item Key="item0070" Value="Bomb Arowana Scale"/>
+        <local:Item Key="item0071" Value="Great Bomb Arowana Scale"/>
+        <local:Item Key="item0072" Value="Whetstone"/>
+        <local:Item Key="item0073" Value="Capture Net"/>
+        <local:Item Key="item0074" Value="Fishing Rod"/>
+        <local:Item Key="item0075" Value="BBQ Spit"/>
+        <local:Item Key="item0076" Value="Ghillie Mantle"/>
+        <local:Item Key="item0077" Value="Temporal Mantle"/>
+        <local:Item Key="item0078" Value="Health Booster"/>
+        <local:Item Key="item0079" Value="Rocksteady Mantle"/>
+        <local:Item Key="item007A" Value="Challenger Mantle"/>
+        <local:Item Key="item007B" Value="Vitality Mantle"/>
+        <local:Item Key="item007C" Value="Fireproof Mantle"/>
+        <local:Item Key="item007D" Value="Waterproof Mantle"/>
+        <local:Item Key="item007E" Value="Iceproof Mantle"/>
+        <local:Item Key="item007F" Value="Thunderproof Mantle"/>
+        <local:Item Key="item0080" Value="Dragonproof Mantle"/>
+        <local:Item Key="item0081" Value="Cleanser Booster"/>
+        <local:Item Key="item0082" Value="Gldier Mantle"/>
+        <local:Item Key="item0083" Value="Evasion Mantle"/>
+        <local:Item Key="item0084" Value="Impact Mantle"/>
+        <local:Item Key="item0085" Value="Apothecary Mantle"/>
+        <local:Item Key="item0086" Value="Immunity Mantle"/>
+        <local:Item Key="item0087" Value="Affinity Booster"/>
+        <local:Item Key="item0088" Value="Bandit Mantle"/>
+        <local:Item Key="item0089" Value="Normal Ammo 1"/>
+        <local:Item Key="item008A" Value="Normal Ammo 2"/>
+        <local:Item Key="item008B" Value="Normal Ammo 3"/>
+        <local:Item Key="item008C" Value="Pierce Ammo 1"/>
+        <local:Item Key="item008D" Value="Pierce Ammo 2"/>
+        <local:Item Key="item008E" Value="Pierce Ammo 3"/>
+        <local:Item Key="item008F" Value="Spread Ammo 1"/>
+        <local:Item Key="item0090" Value="Spread Ammo 2"/>
+        <local:Item Key="item0091" Value="Spread Ammo 3"/>
+        <local:Item Key="item0092" Value="Sticky Ammo 1"/>
+        <local:Item Key="item0093" Value="Sticky Ammo 2"/>
+        <local:Item Key="item0094" Value="Sticky Ammo 3"/>
+        <local:Item Key="item0095" Value="Cluster Bomb 1"/>
+        <local:Item Key="item0096" Value="Cluster Bomb 2"/>
+        <local:Item Key="item0097" Value="Cluster Bomb 3"/>
+        <local:Item Key="item0098" Value="Flaming Ammo"/>
+        <local:Item Key="item0099" Value="Water Ammo"/>
+        <local:Item Key="item009A" Value="Thunder Ammo"/>
+        <local:Item Key="item009B" Value="Freeze Ammo"/>
+        <local:Item Key="item009C" Value="Dragon Ammo"/>
+        <local:Item Key="item009D" Value="Poison Ammo 1"/>
+        <local:Item Key="item009E" Value="Poison Ammo 2"/>
+        <local:Item Key="item009F" Value="Paralysis Ammo 1"/>
+        <local:Item Key="item00A0" Value="Paralysis Ammo 2"/>
+        <local:Item Key="item00A1" Value="Sleep Ammo 1"/>
+        <local:Item Key="item00A2" Value="Sleep Ammo 2"/>
+        <local:Item Key="item00A3" Value="Exhaust Ammo 1"/>
+        <local:Item Key="item00A4" Value="Exhaust Ammo 2"/>
+        <local:Item Key="item00A5" Value="Recover Ammo 1"/>
+        <local:Item Key="item00A6" Value="Recover Ammo 2"/>
+        <local:Item Key="item00A7" Value="Wyvern Ammo"/>
+        <local:Item Key="item00A8" Value="Slicing Ammo"/>
+        <local:Item Key="item00A9" Value="Tranq Ammo"/>
+        <local:Item Key="item00AA" Value="Demon Ammo"/>
+        <local:Item Key="item00AB" Value="Armor Ammo"/>
+        <local:Item Key="item00AC" Value="(None)"/>
+        <local:Item Key="item00AD" Value="Close-range Coating"/>
+        <local:Item Key="item00AE" Value="Empty Phial"/>
+        <local:Item Key="item00AF" Value="Power Coating"/>
+        <local:Item Key="item00B0" Value="Poison Coating"/>
+        <local:Item Key="item00B1" Value="Paralysis Coating"/>
+        <local:Item Key="item00B2" Value="Sleep Coating"/>
+        <local:Item Key="item00B3" Value="Exhaust Coating"/>
+        <local:Item Key="item00B4" Value="Blast Coating"/>
+        <local:Item Key="item00B5" Value="First-aid Med"/>
+        <local:Item Key="item00B6" Value="First-aid Med+"/>
+        <local:Item Key="item00B7" Value="EZ Ration"/>
+        <local:Item Key="item00B8" Value="EZ Lifepowder"/>
+        <local:Item Key="item00B9" Value="EZ Max Potion"/>
+        <local:Item Key="item00BA" Value="EZ Large Barrel Bomb"/>
+        <local:Item Key="item00BB" Value="EZ Shock Trap"/>
+        <local:Item Key="item00BC" Value="EZ Pitfall Trap"/>
+        <local:Item Key="item00BD" Value="EZ Herbal Powder"/>
+        <local:Item Key="item00BE" Value="EZ Demon Powder"/>
+        <local:Item Key="item00BF" Value="EZ Hardshell Powder"/>
+        <local:Item Key="item00C0" Value="EZ Dung Pod"/>
+        <local:Item Key="item00C1" Value="EZ Flash Pod"/>
+        <local:Item Key="item00C2" Value="EZ Screamer Pod"/>
+        <local:Item Key="item00C3" Value="Throwing Knife"/>
+        <local:Item Key="item00C4" Value="Poison Knife"/>
+        <local:Item Key="item00C5" Value="Sleep Knife"/>
+        <local:Item Key="item00C6" Value="Paralysis Knife"/>
+        <local:Item Key="item00C7" Value="Tranq Knife"/>
+        <local:Item Key="item00C8" Value="EZ Farcaster"/>
+        <local:Item Key="item00C9" Value="EZ Tranq Ammo"/>
+        <local:Item Key="item00CA" Value="Ballista Ammo"/>
+        <local:Item Key="item00CB" Value="One-shot Binder"/>
+        <local:Item Key="item00CC" Value="Cannon Ammo"/>
+        <local:Item Key="item00CD" Value="Iron Ore"/>
+        <local:Item Key="item00CE" Value="Machalite Ore"/>
+        <local:Item Key="item00CF" Value="Dragonite Ore"/>
+        <local:Item Key="item00D0" Value="Carbalite Ore"/>
+        <local:Item Key="item00D1" Value="Fucium Ore"/>
+        <local:Item Key="item00D2" Value="Earth Crystal"/>
+        <local:Item Key="item00D3" Value="Coral Crystal"/>
+        <local:Item Key="item00D4" Value="Dragonvein Crystal"/>
+        <local:Item Key="item00D5" Value="Lightcrystal"/>
+        <local:Item Key="item00D6" Value="Novacrystal"/>
+        <local:Item Key="item00D7" Value="Firecell Stone"/>
+        <local:Item Key="item00D8" Value="Aquacore Ore"/>
+        <local:Item Key="item00D9" Value="Spiritcore Ore"/>
+        <local:Item Key="item00DA" Value="Dreamcore Ore"/>
+        <local:Item Key="item00DB" Value="Dragoncore Ore"/>
+        <local:Item Key="item00DC" Value="Armor Sphere"/>
+        <local:Item Key="item00DD" Value="Armor Sphere+"/>
+        <local:Item Key="item00DE" Value="Advanced Armor Sphere"/>
+        <local:Item Key="item00DF" Value="Hard Armor Sphere"/>
+        <local:Item Key="item00E0" Value="Heavy Armor Sphere"/>
+        <local:Item Key="item00E1" Value="Sturdy Bone"/>
+        <local:Item Key="item00E2" Value="Quality Bone"/>
+        <local:Item Key="item00E3" Value="Ancient Bone"/>
+        <local:Item Key="item00E4" Value="Boulder Bone"/>
+        <local:Item Key="item00E5" Value="Coral Bone"/>
+        <local:Item Key="item00E6" Value="Warped Bone"/>
+        <local:Item Key="item00E7" Value="Brutal Bone"/>
+        <local:Item Key="item00E8" Value="Dragonbone Relic"/>
+        <local:Item Key="item00E9" Value="Unknown Skull"/>
+        <local:Item Key="item00EA" Value="Great Hornfly"/>
+        <local:Item Key="item00EB" Value="Sinister Cloth"/>
+        <local:Item Key="item00EC" Value="Monster Bone S"/>
+        <local:Item Key="item00ED" Value="Monster Bone M"/>
+        <local:Item Key="item00EE" Value="Monster Bone L"/>
+        <local:Item Key="item00EF" Value="Monster Bone+"/>
+        <local:Item Key="item00F0" Value="Monster Keenbone"/>
+        <local:Item Key="item00F1" Value="Monster Hardbone"/>
+        <local:Item Key="item00F2" Value="Elder Dragon Bone"/>
+        <local:Item Key="item00F3" Value="Sharp Claw"/>
+        <local:Item Key="item00F4" Value="Piercing Claw"/>
+        <local:Item Key="item00F5" Value="Monster Fluid"/>
+        <local:Item Key="item00F6" Value="Monster Broth"/>
+        <local:Item Key="item00F7" Value="Poison Sac"/>
+        <local:Item Key="item00F8" Value="Toxin Sac"/>
+        <local:Item Key="item00F9" Value="Paralysis Sac"/>
+        <local:Item Key="item00FA" Value="Omniplegia Sac"/>
+        <local:Item Key="item00FB" Value="Sleep Sac"/>
+        <local:Item Key="item00FC" Value="Coma Sac"/>
+        <local:Item Key="item00FD" Value="Flame Sac"/>
+        <local:Item Key="item00FE" Value="Inferno Sac"/>
+        <local:Item Key="item00FF" Value="Aqua Sac"/>
+        <local:Item Key="item0100" Value="Torrent Sac"/>
         <local:Item Key="item0101" Value="Item 257"/>
         <local:Item Key="item0102" Value="Item 258"/>
         <local:Item Key="item0103" Value="Item 259"/>
