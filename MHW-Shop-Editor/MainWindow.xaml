@@ -7,6 +7,12 @@
         mc:Ignorable="d" Height="450" Width="800" Title="{DynamicResource title}">
     <Grid>
 
+        <Button Content="{DynamicResource default}" HorizontalAlignment="Left" Margin="362,52,0,0" VerticalAlignment="Top" Click="Default_Items"/>
+        <Button Content="{DynamicResource gems}" HorizontalAlignment="Left" Margin="362,98,0,0" VerticalAlignment="Top" Click="All_Gems" />
+        <Button Content="{DynamicResource consumables}" HorizontalAlignment="Left" Margin="362,144,0,0" VerticalAlignment="Top" Width="75" Click="All_Consumables"/>
+        <Button Content="{DynamicResource lr_mats}" HorizontalAlignment="Left" Margin="362,190,0,0" VerticalAlignment="Top" Width="75" Click="LR_Materials"/>
+        <Button Content="{DynamicResource hr_mats}" HorizontalAlignment="Left" Margin="362,236,0,0" VerticalAlignment="Top" Width="75" Click="HR_Materials"/>
+        <Button Content="{DynamicResource clear}" HorizontalAlignment="Left" Margin="362,282,0,0" VerticalAlignment="Top" Click="Clear_Button" />
         <ListView HorizontalAlignment="Left" Height="371" Margin="79,24,0,0" VerticalAlignment="Top" Width="154" Name="listview">
             <ComboBox Width="120" ItemsSource="{DynamicResource itemsList}">
                 <ComboBox.ItemsPanel>
@@ -1794,8 +1800,6 @@
                 </ComboBox.ItemsPanel>
             </ComboBox>
         </ListView>
-        <Button Content="{DynamicResource default}" HorizontalAlignment="Left" Margin="362,52,0,0" VerticalAlignment="Top" Click="Default_Items"/>
-        <Button Content="{DynamicResource gems}" HorizontalAlignment="Left" Margin="362,98,0,0" VerticalAlignment="Top" Click="All_Gems" />
         <Menu HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="792">
             <MenuItem Header="{DynamicResource file}" Height="19" Width="100">
                 <MenuItem Header="{DynamicResource open}" HorizontalAlignment="Left" Height="30" Width="140" Click="openFile"/>
@@ -1808,8 +1812,6 @@
                 </ComboBox>
             </MenuItem>
         </Menu>
-        <Button Content="{DynamicResource clear}" HorizontalAlignment="Left" Margin="362,201,0,0" VerticalAlignment="Top" Click="Clear_Button"/>
-        <Button Content="{DynamicResource consumables}" HorizontalAlignment="Left" Margin="362,148,0,0" VerticalAlignment="Top" Width="75" Click="All_Consumables"/>
 
     </Grid>
 </Window>
