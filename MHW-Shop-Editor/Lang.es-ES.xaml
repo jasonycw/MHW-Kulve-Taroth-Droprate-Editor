@@ -17,11 +17,13 @@
     <system:String x:Key="consumables">Consumables</system:String>
     <system:String x:Key="lr_mats">LR Materials</system:String>
     <system:String x:Key="hr_mats">HR Materials</system:String>
+    <system:String x:Key="settings">Settings</system:String>
+    <system:String x:Key="insertTop">Insert to Top</system:String>
+    <system:String x:Key="insertBottom">Insert to Bottom</system:String>
 
 
     <!--itemlist-->
     <x:Array Type="local:Item" x:Key="itemsList" >
-        <local:Item Key="item0000" Value="----------"/>
         <local:Item Key="item0001" Value="Potion"/>
         <local:Item Key="item0002" Value="Mega Potion"/>
         <local:Item Key="item0003" Value="Max Potion"/>
