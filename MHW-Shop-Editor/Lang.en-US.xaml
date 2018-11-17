@@ -924,12 +924,12 @@
         <local:Item Key="item0383" Value="Lunastra Mane"/>
         <local:Item Key="item0384" Value="Lunastra Tail"/>
         <local:Item Key="item0385" Value="Lunastra Horn"/>
-        <local:Item Key="item0386" Value="Item 902"/>
-        <local:Item Key="item0387" Value="Item 903"/>
-        <local:Item Key="item0388" Value="Item 904"/>
-        <local:Item Key="item0389" Value="Item 905"/>
-        <local:Item Key="item038A" Value="Item 906"/>
-        <local:Item Key="item038B" Value="Item 907"/>
+        <local:Item Key="item0386" Value="Behemoth Mane"/>
+        <local:Item Key="item0387" Value="Behemoth Bone"/>
+        <local:Item Key="item0388" Value="Behemoth Great Horn"/>
+        <local:Item Key="item0389" Value="Behemoth Shearclaw"/>
+        <local:Item Key="item038A" Value="Behemoth Tail"/>
+        <local:Item Key="item038B" Value="Aetheryte Shard"/>
         <local:Item Key="item038C" Value="Spring Blossom Ticket"/>
         <local:Item Key="item038D" Value="Summer Twilight Ticket"/>
         <local:Item Key="item038E" Value="Autum Harvest Ticket"/>
@@ -973,7 +973,7 @@
         <local:Item Key="item03B4" Value="Copper Calappa"/>
         <local:Item Key="item03B5" Value="Gold Calappa"/>
         <local:Item Key="item03B6" Value="Tsuchinoko"/>
-        <local:Item Key="item03B7" Value="Item 951"/>
+        <local:Item Key="item03B7" Value="Cactuar Cutting"/>
         <local:Item Key="item03B8" Value="Gold Chip Fragment"/>
         <local:Item Key="item03B9" Value="Gold Nugget Fragment"/>
         <local:Item Key="item03BA" Value="Item 954"/>
@@ -988,16 +988,16 @@
         <local:Item Key="item03C3" Value="First Fleet Ticket"/>
         <local:Item Key="item03C4" Value="Item 964"/>
         <local:Item Key="item03C5" Value="Item 965"/>
-        <local:Item Key="item03C6" Value="Item 966"/>
-        <local:Item Key="item03C7" Value="Item 967"/>
-        <local:Item Key="item03C8" Value="Item 968"/>
+        <local:Item Key="item03C6" Value="Transparent Stone"/>
+        <local:Item Key="item03C7" Value="Flowering Cactuar Cutting"/>
+        <local:Item Key="item03C8" Value="Cactuar"/>
         <local:Item Key="item03C9" Value="Faux Ticket"/>
         <local:Item Key="item03CA" Value="Item 970"/>
         <local:Item Key="item03CB" Value="Item 971"/>
         <local:Item Key="item03CC" Value="Item 972"/>
         <local:Item Key="item03CD" Value="Item 973"/>
         <local:Item Key="item03CE" Value="Item 974"/>
-        <local:Item Key="item03CF" Value="Item 975"/>
+        <local:Item Key="item03CF" Value="Glamour Prism"/>
         <local:Item Key="item03D0" Value="Item 976"/>
         <local:Item Key="item03D1" Value="Item 977"/>
         <local:Item Key="item03D2" Value="Item 978"/>
@@ -1021,7 +1021,7 @@
         <local:Item Key="item03E4" Value="Item 996"/>
         <local:Item Key="item03E5" Value="Item 997"/>
         <local:Item Key="item03E6" Value="Item 998"/>
-        <local:Item Key="item03E7" Value="Item 999"/>
+        <local:Item Key="item03E7" Value="Hex's Golden Ticket"/>
         <local:Item Key="item03E8" Value="Item 1000"/>
         <local:Item Key="item03E9" Value="Item 1001"/>
         <local:Item Key="item03EA" Value="Item 1002"/>
