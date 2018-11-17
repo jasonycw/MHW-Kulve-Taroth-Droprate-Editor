@@ -1,4 +1,4 @@
-# MHW-Shop-Editor
+# MHW Shop List Editor
 Monster Hunter World Provisions Stockpile shop editor
 -------------------------------------------------------
 In order to use created shop list files, place the "shopList.slt" file in "steamapps\common\Monster Hunter World\nativePC\common\facility"  
