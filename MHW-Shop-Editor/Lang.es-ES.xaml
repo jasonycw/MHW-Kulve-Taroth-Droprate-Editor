@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:MHW_Shop_Editor"
+                    xmlns:local="clr-namespace:MHWShopEditor"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
 
