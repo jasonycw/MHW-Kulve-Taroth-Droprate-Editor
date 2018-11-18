@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MHW-Shop-Editor", "MHW-Shop-Editor\MHW-Shop-Editor.csproj", "{465ACACD-895E-44A9-8741-4233497E0606}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MhwKtDroprateEditor", "MHW-KT-Droprate-Editor\MhwKtDroprateEditor.csproj", "{465ACACD-895E-44A9-8741-4233497E0606}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,10 +1,10 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:MHWShopEditor"
-                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+                    xmlns:local="clr-namespace:MhwKdDroprateEditor"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xmlns:mhwKdDroprateEditor="clr-namespace:MhwKdDroprateEditor">
 
 
-    <!--TODO: Translate strings-->
     <!--application-->
     <system:String x:Key="title">MHW Shop Editor</system:String>
     <system:String x:Key="file">File</system:String>
@@ -23,7 +23,7 @@
 
 
     <!--itemlist-->
-    <x:Array Type="local:Item" x:Key="itemsList" >
+    <x:Array Type="mhwKdDroprateEditor:Item" x:Key="itemsList" >
         <local:Item Key="item0001" Value="Potion"/>
         <local:Item Key="item0002" Value="Mega Potion"/>
         <local:Item Key="item0003" Value="Max Potion"/>

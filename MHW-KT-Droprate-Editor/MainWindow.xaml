@@ -1,9 +1,9 @@
-﻿<Window x:Class="MHWShopEditor.MainWindow"
+﻿<Window x:Class="MhwKdDroprateEditor.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MHWShopEditor"
+        xmlns:local="clr-namespace:MhwKdDroprateEditor"
         mc:Ignorable="d" Height="450" Width="800" Title="{DynamicResource title}">
     <Grid>
         <Button Content="{DynamicResource default}" HorizontalAlignment="Left" Margin="610,52,0,0" VerticalAlignment="Top" Click="Default_Items"/>
@@ -26,7 +26,6 @@
             <MenuItem Header="{DynamicResource lang}" Height="19" Width="100">
                 <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged" SelectedIndex="0">
                     <ComboBoxItem Content="English" Tag="en-US"/>
-                    <ComboBoxItem Content="Español" Tag="es-ES"/>
                 </ComboBox>
             </MenuItem>
         </Menu>

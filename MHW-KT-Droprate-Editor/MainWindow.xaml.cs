@@ -3,19 +3,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace MHWShopEditor
+namespace MhwKdDroprateEditor
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -45,8 +36,8 @@ namespace MHWShopEditor
 
         private void Populate_Boxes(List<string> items)
         {
-            Item[] itemlist = new Item[listboxin.Count];
-            listboxin.CopyTo(itemlist, 0);                     
+            var itemlist = new Item[listboxin.Count];
+            listboxin.CopyTo(itemlist, 0);
             if (listboxout.Count + items.Count > 254)
             {
                 Error_Message();
@@ -56,7 +47,7 @@ namespace MHWShopEditor
                 if (insert == 0)
                 {
                     items.Reverse();
-                    foreach (string item in items)
+                    foreach (var item in items)
                     {
                         var result = itemlist.SingleOrDefault(x => x.Key.Substring(4) == item);
                         if (result != null)
@@ -68,7 +59,7 @@ namespace MHWShopEditor
                 }
                 else
                 {
-                    foreach (string item in items)
+                    foreach (var item in items)
                     {
                         var result = itemlist.SingleOrDefault(x => x.Key.Substring(4) == item);
                         if (result != null)
@@ -84,23 +75,23 @@ namespace MHWShopEditor
 
         private void openFile(object sender, RoutedEventArgs e)
         {
-            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog
+            var dlg = new Microsoft.Win32.OpenFileDialog
             {
-                FileName = "shopList",
-                DefaultExt = ".slt",
-                Filter = "Shop List file | *.slt",
+                FileName = "em117_grade_lot",
+                DefaultExt = ".em117glt",
+                Filter = "KL Droprate table | *.em117glt",
                 InitialDirectory = AppDomain.CurrentDomain.BaseDirectory
             };
 
             if (dlg.ShowDialog() == true)
             {
-                string filename = dlg.FileName;
-                byte[] input = System.IO.File.ReadAllBytes(filename);
-                byte[] buffer = new byte[2];
-                List<string> items = new List<string>();
-                for (int i = 10; i < input.Length-1; i+=12)
+                var filename = dlg.FileName;
+                var input = System.IO.File.ReadAllBytes(filename);
+                var buffer = new byte[2];
+                var items = new List<string>();
+                for (var i = 10; i < input.Length - 1; i += 12)
                 {
-                    buffer[0] = input[i+1];
+                    buffer[0] = input[i + 1];
                     buffer[1] = input[i];
                     items.Add(BitConverter.ToString(buffer).Replace("-", ""));
                 }
@@ -111,11 +102,11 @@ namespace MHWShopEditor
         private async void saveFile(object sender, RoutedEventArgs e)
         {
             System.IO.Stream fs;
-            Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog()
+            var dlg = new Microsoft.Win32.SaveFileDialog()
             {
-                FileName = "shopList",
-                DefaultExt = ".slt",
-                Filter = "Shop List file | *.slt",
+                FileName = "em117_grade_lot",
+                DefaultExt = ".em117glt",
+                Filter = "KL Droprate table | *.em117glt",
                 InitialDirectory = AppDomain.CurrentDomain.BaseDirectory
             };
 
@@ -124,17 +115,17 @@ namespace MHWShopEditor
             {
                 if ((fs = dlg.OpenFile()) != null)
                 {
-                    byte[] header = new byte[] { 0x18, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
-                    byte[] buffer = new byte[] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
-                    List<byte> items = header.ToList();
-                    foreach (Item item in listboxout)
+                    var header = new byte[] { 0x18, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+                    var buffer = new byte[] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+                    var items = header.ToList();
+                    foreach (var item in listboxout)
                     {
-                        string hex = item.Key.Substring(4);
+                        var hex = item.Key.Substring(4);
                         items.Add(Convert.ToByte(int.Parse(hex.Substring(2), System.Globalization.NumberStyles.HexNumber)));
                         items.Add(Convert.ToByte(int.Parse(hex.Substring(0, 2), System.Globalization.NumberStyles.HexNumber)));
                         items.AddRange(buffer);
                     }
-                    byte[] output = items.ToArray();
+                    var output = items.ToArray();
                     await fs.WriteAsync(output, 0, output.Length);
                     fs.Close();
                 }
@@ -143,7 +134,7 @@ namespace MHWShopEditor
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ResourceDictionary dict = new ResourceDictionary();
+            var dict = new ResourceDictionary();
 
             switch (((sender as ComboBox).SelectedItem as ComboBoxItem).Tag.ToString())
             {
@@ -156,29 +147,24 @@ namespace MHWShopEditor
                 default:
                     break;
             }
-            this.Resources.MergedDictionaries.Add(dict);
+            Resources.MergedDictionaries.Add(dict);
             Clear();
             Init_Boxes();
         }
 
-        private void Default_Items(object sender, RoutedEventArgs e)
-        {
-            Populate_Boxes(DEFAULT_ITEMS.ToList());
-        }
+        private void Default_Items(object sender, RoutedEventArgs e) => Populate_Boxes(DEFAULT_ITEMS.ToList());
 
-        private void Clear_Button(object sender, RoutedEventArgs e)
-        {
-            Clear();
-        }
+        private void Clear_Button(object sender, RoutedEventArgs e) => Clear();
 
         private void Clear()
         {
-            List<Item> itemlist = new List<Item>();
-            foreach (Item item in listboxout) {
+            var itemlist = new List<Item>();
+            foreach (var item in listboxout)
+            {
                 listboxin.Add(item);
                 itemlist.Add(item);
             }
-            foreach (Item item in itemlist)
+            foreach (var item in itemlist)
             {
                 listboxout.Remove(item);
             }
@@ -186,32 +172,20 @@ namespace MHWShopEditor
             Refresh();
         }
 
-        private void All_Gems(object sender, RoutedEventArgs e)
-        {
-            Populate_Boxes(GEMS.ToList());
-        }
+        private void All_Gems(object sender, RoutedEventArgs e) => Populate_Boxes(GEMS.ToList());
 
-        private void All_Consumables(object sender, RoutedEventArgs e)
-        {
-            Populate_Boxes(CONSUMABLES.ToList());
-        }
+        private void All_Consumables(object sender, RoutedEventArgs e) => Populate_Boxes(CONSUMABLES.ToList());
 
-        private void LR_Materials(object sender, RoutedEventArgs e)
-        {
-            Populate_Boxes(LR_MATERIALS.ToList());
-        }
+        private void LR_Materials(object sender, RoutedEventArgs e) => Populate_Boxes(LR_MATERIALS.ToList());
 
-        private void HR_Materials(object sender, RoutedEventArgs e)
-        {
-            Populate_Boxes(HR_MATERIALS.ToList());
-        }
+        private void HR_Materials(object sender, RoutedEventArgs e) => Populate_Boxes(HR_MATERIALS.ToList());
 
         private void Init_Boxes()
         {
             listboxin.Clear();
-            Item[] itemlist = new Item[hiddenlist.Count()];
+            var itemlist = new Item[hiddenlist.Count()];
             hiddenlist.CopyTo(itemlist, 0);
-            foreach (Item item in itemlist)
+            foreach (var item in itemlist)
             {
                 listboxin.Add(item);
             }
@@ -225,31 +199,31 @@ namespace MHWShopEditor
         }
 
         private void Send_Out(object sender, RoutedEventArgs e)
-        {            
+        {
             if (input.SelectedItems != null && input.SelectedItems.Count + listboxout.Count < 256)
             {
-                Item[] selecteditems = new Item[input.SelectedItems.Count];
+                var selecteditems = new Item[input.SelectedItems.Count];
                 input.SelectedItems.CopyTo(selecteditems, 0);
-                List<Item> itemlist = new List<Item>();
+                var itemlist = new List<Item>();
                 if (insert == 0)
                 {
                     Array.Reverse(selecteditems);
-                    foreach (Item item in selecteditems)
+                    foreach (var item in selecteditems)
                     {
                         listboxout.Insert(0, item);
                         itemlist.Add(item);
-                    }                      
+                    }
                 }
                 else
                 {
-                    foreach (Item item in selecteditems)
+                    foreach (var item in selecteditems)
                     {
                         listboxout.Add(item);
                         itemlist.Add(item);
                     }
-                        
+
                 }
-                foreach (Item item in itemlist)
+                foreach (var item in itemlist)
                 {
                     listboxin.Remove(item);
                 }
@@ -265,13 +239,13 @@ namespace MHWShopEditor
         {
             if (output.SelectedItems != null)
             {
-                List<Item> itemlist = new List<Item>();
+                var itemlist = new List<Item>();
                 foreach (Item item in output.SelectedItems)
                 {
                     itemlist.Add(item);
                     listboxin.Add(item);
                 }
-                foreach (Item item in itemlist)
+                foreach (var item in itemlist)
                 {
                     listboxout.Remove(item);
                 }
@@ -282,7 +256,7 @@ namespace MHWShopEditor
 
         private void Insertion_Method(object sender, SelectionChangedEventArgs e)
         {
-            switch(insert)
+            switch (insert)
             {
                 case 0:
                     insert = -1;
@@ -295,16 +269,13 @@ namespace MHWShopEditor
             }
         }
 
-        private void Error_Message()
-        {
-            MessageBox.Show("Too many items in the output box! Can't load this preset.", "Error");
-        }
+        private void Error_Message() => MessageBox.Show("Too many items in the output box! Can't load this preset.", "Error");
 
         public ObservableCollection<Item> filteredInput
         {
             get
             {
-                if (String.IsNullOrEmpty(inputFilterText)) 
+                if (String.IsNullOrEmpty(inputFilterText))
                 {
                     return new ObservableCollection<Item>(listboxin);
                 }
@@ -315,7 +286,7 @@ namespace MHWShopEditor
 
         public string filterInputText
         {
-            get { return inputFilterText;  }
+            get => inputFilterText;
             set
             {
                 inputFilterText = value;
@@ -343,7 +314,7 @@ namespace MHWShopEditor
 
         public string filterOutputText
         {
-            get { return outputFilterText; }
+            get => outputFilterText;
             set
             {
                 outputFilterText = value;
@@ -366,10 +337,7 @@ namespace MHWShopEditor
     {
         public string Key { get; set; }
         public string Value { get; set; }
-        public int Hex { get { return Convert.ToInt32(this.Key.Substring(4), 16); } }
-        public override string ToString()
-        {
-            return Value;
-        }
+        public int Hex => Convert.ToInt32(Key.Substring(4), 16);
+        public override string ToString() => Value;
     }
 }
