@@ -9,14 +9,16 @@ Only the file named `em117_grade_lot.em117glt` will be read by the game, so you 
 
 -------------------------------------------------------
 
-## Screenshot
-![image](https://user-images.githubusercontent.com/4518597/48700378-d0c0aa80-ec26-11e8-93f0-8732759793ce.png)
+### Screenshot
+![image](https://user-images.githubusercontent.com/4518597/48712932-fe6b1b00-ec49-11e8-8410-7a98e444e3d4.png)
 
 -------------------------------------------------------
 
-Thanks to @MHhexhexhex for the droprate table<br>
+### Credit
+Thanks to [@MHhexhexhex](https://twitter.com/MHhexhexhex) for the droprate table<br>
 https://www.nexusmods.com/monsterhunterworld/mods/473?tab=description
 ![alt text](https://staticdelivery.nexusmods.com/mods/2531/images/473/473-1541120521-428636282.png)
 
-and @IXXur for the editor template<br>
+and [@IXXur](https://www.nexusmods.com/monsterhunterworld/users/59870351) for the editor template, especially for the load and save file code<br>
 https://www.nexusmods.com/monsterhunterworld/mods/507?tab=description
+![image](https://user-images.githubusercontent.com/4518597/48713042-56098680-ec4a-11e8-963c-23554921b110.png)
