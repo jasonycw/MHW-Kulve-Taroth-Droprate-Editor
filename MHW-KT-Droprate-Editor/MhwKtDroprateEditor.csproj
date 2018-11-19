@@ -114,6 +114,7 @@
   <ItemGroup>
     <Compile Include="Models\Droprate.cs" />
     <Compile Include="Models\Enum.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
