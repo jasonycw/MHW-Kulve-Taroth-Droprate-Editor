@@ -4,42 +4,34 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
-        mc:Ignorable="d" Height="450" Width="666" Title="{DynamicResource title}" ResizeMode="NoResize">
+        mc:Ignorable="d" Height="400" Width="666" Title="{DynamicResource title}" ResizeMode="NoResize">
     <Grid>
-        <!--<Button Content="{DynamicResource default}" HorizontalAlignment="Left" Margin="610,52,0,0" VerticalAlignment="Top" Click="Default_Items"/>
-        <Button Content="{DynamicResource gems}" HorizontalAlignment="Left" Margin="610,98,0,0" VerticalAlignment="Top" Click="All_Gems" />
-        <Button Content="{DynamicResource consumables}" HorizontalAlignment="Left" Margin="610,144,0,0" VerticalAlignment="Top" Click="All_Consumables"/>
-        <Button Content="{DynamicResource lr_mats}" HorizontalAlignment="Left" Margin="610,190,0,0" VerticalAlignment="Top" Click="LR_Materials"/>
-        <Button Content="{DynamicResource hr_mats}" HorizontalAlignment="Left" Margin="610,236,0,0" VerticalAlignment="Top" Click="HR_Materials"/>
-        <Button Content="{DynamicResource clear}" HorizontalAlignment="Left" Margin="610,282,0,0" VerticalAlignment="Top" Click="Clear_Button" />-->
-        <Menu HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="792">
-            <MenuItem Header="{DynamicResource file}" Height="19" Width="47">
-                <MenuItem Header="{DynamicResource open}" HorizontalAlignment="Left" Height="30" Width="140" Click="openFile"/>
-                <MenuItem Header="{DynamicResource save}" HorizontalAlignment="Left" Height="30" Width="140" Click="saveFile"/>
-            </MenuItem>
-        </Menu>
-        <Image HorizontalAlignment="Left" Height="35" Margin="99,88,0,0" VerticalAlignment="Top" Width="42" Source="Images/r8.png"/>
-        <Image HorizontalAlignment="Left" Height="35" Margin="99,159,0,0" VerticalAlignment="Top" Width="42" Source="Images/r7.png"/>
-        <Image HorizontalAlignment="Left" Height="35" Margin="99,229,0,0" VerticalAlignment="Top" Width="42" Source="Images/r6.png"/>
-        <TextBlock HorizontalAlignment="Left" Margin="203,39,0,0" TextWrapping="Wrap" Text="R6 %" VerticalAlignment="Top" Height="18" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="294,39,0,0" TextWrapping="Wrap" Text="R7 %" VerticalAlignment="Top" Height="18" Width="38"/>
-        <TextBlock HorizontalAlignment="Left" Margin="413,39,0,0" TextWrapping="Wrap" Text="R8 %" VerticalAlignment="Top" Height="18" Width="31"/>
-        <TextBlock HorizontalAlignment="Left" Margin="500,39,0,0" TextWrapping="Wrap" Text="Total %" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="500,94,0,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Top" Width="38" Height="28"/>
-        <TextBlock HorizontalAlignment="Left" Margin="500,161,0,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Top" Width="38" Height="28"/>
-        <TextBlock HorizontalAlignment="Left" Margin="500,231,0,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Top" Width="38" Height="28"/>
-        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="187,92,0,299" Width="56"/>
-        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="280,92,0,299" Width="56"/>
-        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="399,92,0,299" Width="56"/>
-        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="187,159,0,232" Width="56"/>
-        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="280,159,0,232" Width="56"/>
-        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="399,159,0,232" Width="56"/>
-        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="187,229,0,162" Width="56"/>
-        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="280,229,0,162" Width="56"/>
-        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="399,229,0,162" Width="56"/>
-        <Button Content="Load" HorizontalAlignment="Left" Margin="132,362,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="Default" HorizontalAlignment="Left" Margin="234,362,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="Hex" HorizontalAlignment="Left" Margin="336,362,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="430,362,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Image HorizontalAlignment="Left" Height="35" Margin="99,89,0,0" VerticalAlignment="Top" Width="42" Source="Images/r8.png"/>
+        <Image HorizontalAlignment="Left" Height="35" Margin="99,156,0,0" VerticalAlignment="Top" Width="42" Source="Images/r7.png"/>
+        <Image HorizontalAlignment="Left" Height="35" Margin="99,226,0,0" VerticalAlignment="Top" Width="42" Source="Images/r6.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="173,39,0,0" TextWrapping="Wrap" Text="R6 Gold ___ %" VerticalAlignment="Top" Height="18" Width="80"/>
+        <TextBlock HorizontalAlignment="Left" Margin="267,39,0,0" TextWrapping="Wrap" Text="R6 ___Gold %" VerticalAlignment="Top" Height="18" Width="79"/>
+        <TextBlock HorizontalAlignment="Left" Margin="374,39,0,0" TextWrapping="Wrap" Text="R7 %" VerticalAlignment="Top" Height="18" Width="38"/>
+        <TextBlock HorizontalAlignment="Left" Margin="458,39,0,0" TextWrapping="Wrap" Text="R8 %" VerticalAlignment="Top" Height="18" Width="31"/>
+        <TextBlock HorizontalAlignment="Left" Margin="558,39,0,0" TextWrapping="Wrap" Text="Total %" VerticalAlignment="Top" Width="50" TextAlignment="Right"/>
+        <TextBlock x:Name="BrownTotal" HorizontalAlignment="Left" Margin="558,94,0,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Top" Width="50" Height="30" TextAlignment="Center"/>
+        <TextBlock x:Name="SilverTotal" HorizontalAlignment="Left" Margin="558,161,0,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Top" Width="50" Height="30" TextAlignment="Center"/>
+        <TextBlock x:Name="GoldTotal" HorizontalAlignment="Left" Margin="558,229,0,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Top" Width="50" Height="30" TextAlignment="Center"/>
+        <xctk:DecimalUpDown x:Name="BrownR6Pre" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="187,92,0,249" Width="56"/>
+        <xctk:DecimalUpDown x:Name="BrownR6Post" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="276,92,0,249" Width="56"/>
+        <xctk:DecimalUpDown x:Name="BrownR7" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="360,92,0,249" Width="56"/>
+        <xctk:DecimalUpDown x:Name="BrownR8" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="450,92,0,249" Width="56"/>
+        <xctk:DecimalUpDown x:Name="SilverR6Pre" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="187,159,0,182" Width="56"/>
+        <xctk:DecimalUpDown x:Name="SilverR6Post" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="276,159,0,182" Width="56"/>
+        <xctk:DecimalUpDown x:Name="SilverR7" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="360,159,0,182" Width="56"/>
+        <xctk:DecimalUpDown x:Name="SilverR8" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="450,159,0,182" Width="56"/>
+        <xctk:DecimalUpDown x:Name="GoldR6Pre" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="187,229,0,112" Width="56"/>
+        <xctk:DecimalUpDown x:Name="GoldR6Post" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="276,229,0,112" Width="56"/>
+        <xctk:DecimalUpDown x:Name="GoldR7" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="360,229,0,112" Width="56"/>
+        <xctk:DecimalUpDown x:Name="GoldR8" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="450,229,0,112" Width="56"/>
+        <Button x:Name="LoadButton" Content="Load" HorizontalAlignment="Left" Margin="129,311,0,0" VerticalAlignment="Top" Width="75"  Click="OpenFile"/>
+        <Button x:Name="DefaultButton" Content="Default" HorizontalAlignment="Left" Margin="231,311,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="HexButton" Content="Hex" HorizontalAlignment="Left" Margin="337,311,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="449,311,0,0" VerticalAlignment="Top" Width="75" Click="SaveFile"/>
     </Grid>
 </Window>

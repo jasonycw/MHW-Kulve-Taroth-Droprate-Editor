@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{465ACACD-895E-44A9-8741-4233497E0606}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MhwKdDroprateEditor</RootNamespace>
+    <RootNamespace>MhwKtDroprateEditor</RootNamespace>
     <AssemblyName>MHW_KT_Droprate_Editor</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -53,6 +53,9 @@
     <StartupObject>MhwKtDroprateEditor.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -109,6 +112,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Droprate.cs" />
+    <Compile Include="Models\Enum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
