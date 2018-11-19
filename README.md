@@ -10,7 +10,7 @@ Only the file named `em117_grade_lot.em117glt` will be read by the game, so you 
 -------------------------------------------------------
 
 ### Screenshot
-![image](https://user-images.githubusercontent.com/4518597/48712932-fe6b1b00-ec49-11e8-8410-7a98e444e3d4.png)
+![image](https://user-images.githubusercontent.com/4518597/48719567-d0d99e00-ec58-11e8-8d10-d935c9a68d88.png)
 
 -------------------------------------------------------
 
