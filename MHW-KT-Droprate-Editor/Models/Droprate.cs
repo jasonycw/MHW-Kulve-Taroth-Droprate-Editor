@@ -8,6 +8,10 @@
         public decimal R7 { get; set; }
         public decimal R8 { get; set; }
 
+        public Droprate()
+        {
+        }
+
         public Droprate(WeaponType type)
             => Type = type;
 

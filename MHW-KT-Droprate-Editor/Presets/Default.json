@@ -1,22 +1,22 @@
 [
 	{
-		"type" : "Dissolved",
-		"R6_gold_prefix" : 67,
-		"R6_gold_postfix" : 27,
+		"Type" : "Dissolved",
+		"R6GoldPrefix" : 67,
+		"R6GoldPostfix" : 27,
 		"R7" : 6,
 		"R8" : 0
 	},
 	{
-		"type" : "Melded",
-		"R6_gold_prefix" : 0,
-		"R6_gold_postfix" : 79,
+		"Type" : "Melded",
+		"R6GoldPrefix" : 0,
+		"R6GoldPostfix" : 79,
 		"R7" : 18,
 		"R8" : 3
 	},
 	{
-		"type" : "Sublimated",
-		"R6_gold_prefix" : 0,
-		"R6_gold_postfix" : 0,
+		"Type" : "Sublimated",
+		"R6GoldPrefix" : 0,
+		"R6GoldPostfix" : 0,
 		"R7" : 63,
 		"R8" : 37
 	}

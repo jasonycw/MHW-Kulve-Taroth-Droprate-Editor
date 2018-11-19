@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using MhwKtDroprateEditor.Models;
+using Newtonsoft.Json;
+using System;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
-using MhwKtDroprateEditor.Models;
-using Newtonsoft.Json;
 
 namespace MhwKtDroprateEditor
 {
@@ -24,23 +24,29 @@ namespace MhwKtDroprateEditor
         public MainWindow()
         {
             InitializeComponent();
-            InitializeDroprate();
-            Populate_Boxes(BrownDroprate, SilverDroprate, GoldDroprate);
+            PresetDroprate("Default.json");
         }
 
-        private void InitializeDroprate()
-        {
-            PresetDroprate("./Presets/Default.json");
-        }
+        private void LoadDefault(object sender, RoutedEventArgs e) 
+            => PresetDroprate("Default.json");
+
+        private void LoadHex(object sender, RoutedEventArgs e) 
+            => PresetDroprate("Hex.json");
 
         private void PresetDroprate(string file)
         {
-            var input = System.IO.File.ReadAllText(file);
-            var droprates = JsonConvert.DeserializeObject<Droprate[]>(input);
+            var asm = Assembly.GetExecutingAssembly();
+            using (var stream = asm.GetManifestResourceStream($"MhwKtDroprateEditor.Presets.{file}"))
+            using (var reader = new StreamReader(stream))
+            {
+                var jsonFile = reader.ReadToEnd();
+                var droprates = JsonConvert.DeserializeObject<Droprate[]>(jsonFile);
 
-            BrownDroprate = new Droprate(WeaponType.Dissolved);
-            SilverDroprate = new Droprate(WeaponType.Melded);
-            GoldDroprate = new Droprate(WeaponType.Sublimated);
+                BrownDroprate = droprates.FirstOrDefault(d => d.Type == WeaponType.Dissolved);
+                SilverDroprate = droprates.FirstOrDefault(d => d.Type == WeaponType.Melded);
+                GoldDroprate = droprates.FirstOrDefault(d => d.Type == WeaponType.Sublimated);
+            }
+            Populate_Boxes(BrownDroprate, SilverDroprate, GoldDroprate);
         }
 
         private void Populate_Boxes(Droprate brownDroprate, Droprate silverDroprate, Droprate goldDroprate)
@@ -49,60 +55,22 @@ namespace MhwKtDroprateEditor
             BrownR6Post.Value = brownDroprate.R6GoldPostfix / 100;
             BrownR7.Value = brownDroprate.R7 / 100;
             BrownR8.Value = brownDroprate.R8 / 100;
-            BrownTotal.Text = $"{(brownDroprate.R6GoldPrefix + brownDroprate.R6GoldPostfix + brownDroprate.R7 + brownDroprate.R8) * 100}%";
+            BrownTotal.Text = $"{brownDroprate.R6GoldPrefix + brownDroprate.R6GoldPostfix + brownDroprate.R7 + brownDroprate.R8}%";
 
             SilverR6Pre.Value = silverDroprate.R6GoldPrefix / 100;
             SilverR6Post.Value = silverDroprate.R6GoldPostfix / 100;
             SilverR7.Value = silverDroprate.R7 / 100;
             SilverR8.Value = silverDroprate.R8 / 100;
-            SilverTotal.Text = $"{(silverDroprate.R6GoldPrefix + silverDroprate.R6GoldPostfix + silverDroprate.R7 + silverDroprate.R8) * 100}%";
+            SilverTotal.Text = $"{silverDroprate.R6GoldPrefix + silverDroprate.R6GoldPostfix + silverDroprate.R7 + silverDroprate.R8}%";
 
             GoldR6Pre.Value = goldDroprate.R6GoldPrefix / 100;
             GoldR6Post.Value = goldDroprate.R6GoldPostfix / 100;
             GoldR7.Value = goldDroprate.R7 / 100;
             GoldR8.Value = goldDroprate.R8 / 100;
-            GoldTotal.Text = $"{(goldDroprate.R6GoldPrefix + goldDroprate.R6GoldPostfix + goldDroprate.R7 + goldDroprate.R8) * 100}%";
+            GoldTotal.Text = $"{goldDroprate.R6GoldPrefix + goldDroprate.R6GoldPostfix + goldDroprate.R7 + goldDroprate.R8}%";
 
-
+            //TODO: Add over 100% error
         }
-        //private void Populate_Boxes(List<string> items)
-        //{
-        //    var itemlist = new Item[listboxin.Count];
-        //    listboxin.CopyTo(itemlist, 0);
-        //    if (listboxout.Count + items.Count > 254)
-        //    {
-        //        Error_Message();
-        //    }
-        //    else
-        //    {
-        //        if (insert == 0)
-        //        {
-        //            items.Reverse();
-        //            foreach (var item in items)
-        //            {
-        //                var result = itemlist.SingleOrDefault(x => x.Key.Substring(4) == item);
-        //                if (result != null)
-        //                {
-        //                    listboxin.Remove(result);
-        //                    listboxout.Insert(0, result);
-        //                }
-        //            }
-        //        }
-        //        else
-        //        {
-        //            foreach (var item in items)
-        //            {
-        //                var result = itemlist.SingleOrDefault(x => x.Key.Substring(4) == item);
-        //                if (result != null)
-        //                {
-        //                    listboxin.Remove(result);
-        //                    listboxout.Add(result);
-        //                }
-        //            }
-        //        }
-        //        Refresh();
-        //    }
-        //}
 
         private void OpenFile(object sender, RoutedEventArgs e)
         {
@@ -130,15 +98,13 @@ namespace MhwKtDroprateEditor
                         BrownDroprate = new Droprate(WeaponType.Dissolved, r6Pre, r6Post, r7, r8);
                     else if (i == 30)
                         SilverDroprate = new Droprate(WeaponType.Melded, r6Pre, r6Post, r7, r8);
-                    else if (i == 54) 
+                    else if (i == 54)
                         GoldDroprate = new Droprate(WeaponType.Sublimated, r6Pre, r6Post, r7, r8);
                 }
 
                 Populate_Boxes(BrownDroprate, SilverDroprate, GoldDroprate);
             }
         }
-
-        
 
         private async void SaveFile(object sender, RoutedEventArgs e)
         {
@@ -185,8 +151,7 @@ namespace MhwKtDroprateEditor
             Set(JsonConvert.DeserializeObject<Droprate>(input));
         }
 
-        private void Set(Droprate droprate)
-        {
+        private void Set(Droprate droprate) =>
             //var itemlist = new List<Item>();
             //foreach (var item in listboxout)
             //{
@@ -199,19 +164,6 @@ namespace MhwKtDroprateEditor
             //}
             //Sort();
             Refresh();
-        }
-
-        //private void Init_Boxes()
-        //{
-        //    listboxin.Clear();
-        //    var itemlist = new Item[hiddenlist.Count()];
-        //    hiddenlist.CopyTo(itemlist, 0);
-        //    foreach (var item in itemlist)
-        //    {
-        //        listboxin.Add(item);
-        //    }
-        //    Refresh();
-        //}
 
         private void LargerThan100(string item) => MessageBox.Show($"{item} is larger than 100%", "Error");
 
@@ -230,6 +182,8 @@ namespace MhwKtDroprateEditor
         {
 
         }
+
+
     }
 
     public class Item

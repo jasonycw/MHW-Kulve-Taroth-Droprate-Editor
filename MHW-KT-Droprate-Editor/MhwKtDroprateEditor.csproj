@@ -132,8 +132,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
-    <None Include="Presets\Default.json" />
-    <None Include="Presets\Hex.json" />
+    <EmbeddedResource Include="Presets\Default.json" />
+    <EmbeddedResource Include="Presets\Hex.json" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

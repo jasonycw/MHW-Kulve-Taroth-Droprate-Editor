@@ -30,8 +30,8 @@
         <xctk:DecimalUpDown x:Name="GoldR7" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="360,229,0,112" Width="56"/>
         <xctk:DecimalUpDown x:Name="GoldR8" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="450,229,0,112" Width="56"/>
         <Button x:Name="LoadButton" Content="Load" HorizontalAlignment="Left" Margin="129,311,0,0" VerticalAlignment="Top" Width="75"  Click="OpenFile"/>
-        <Button x:Name="DefaultButton" Content="Default" HorizontalAlignment="Left" Margin="231,311,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button x:Name="HexButton" Content="Hex" HorizontalAlignment="Left" Margin="337,311,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="DefaultButton" Content="Default" HorizontalAlignment="Left" Margin="231,311,0,0" VerticalAlignment="Top" Width="75" Click="LoadDefault"/>
+        <Button x:Name="HexButton" Content="Hex" HorizontalAlignment="Left" Margin="337,311,0,0" VerticalAlignment="Top" Width="75" Click="LoadHex"/>
         <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="449,311,0,0" VerticalAlignment="Top" Width="75" Click="SaveFile"/>
     </Grid>
 </Window>
