@@ -1,0 +1,23 @@
+[
+	{
+		"type" : "Dissolved",
+		"R6_gold_prefix" : 67,
+		"R6_gold_postfix" : 27,
+		"R7" : 6,
+		"R8" : 0
+	},
+	{
+		"type" : "Melded",
+		"R6_gold_prefix" : 0,
+		"R6_gold_postfix" : 79,
+		"R7" : 18,
+		"R8" : 3
+	},
+	{
+		"type" : "Sublimated",
+		"R6_gold_prefix" : 0,
+		"R6_gold_postfix" : 0,
+		"R7" : 63,
+		"R8" : 37
+	}
+]
