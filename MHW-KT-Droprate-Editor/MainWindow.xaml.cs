@@ -6,7 +6,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows;
-using System.Windows.Controls;
 
 namespace MhwKtDroprateEditor
 {
@@ -17,21 +16,26 @@ namespace MhwKtDroprateEditor
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        public bool rendered = false;
+
         public Droprate BrownDroprate;
         public Droprate SilverDroprate;
         public Droprate GoldDroprate;
 
-        public MainWindow()
+        private void InitializeProperties()
         {
-            InitializeComponent();
-            PresetDroprate("Default.json");
+            BrownDroprate = new Droprate(WeaponType.Dissolved);
+            SilverDroprate = new Droprate(WeaponType.Melded);
+            GoldDroprate = new Droprate(WeaponType.Sublimated);
         }
 
-        private void LoadDefault(object sender, RoutedEventArgs e) 
-            => PresetDroprate("Default.json");
-
-        private void LoadHex(object sender, RoutedEventArgs e) 
-            => PresetDroprate("Hex.json");
+        public MainWindow()
+        {
+            InitializeProperties();
+            InitializeComponent();
+            rendered = true;
+            PresetDroprate("Default.json");
+        }
 
         private void PresetDroprate(string file)
         {
@@ -46,30 +50,66 @@ namespace MhwKtDroprateEditor
                 SilverDroprate = droprates.FirstOrDefault(d => d.Type == WeaponType.Melded);
                 GoldDroprate = droprates.FirstOrDefault(d => d.Type == WeaponType.Sublimated);
             }
-            Populate_Boxes(BrownDroprate, SilverDroprate, GoldDroprate);
+            Render();
         }
 
-        private void Populate_Boxes(Droprate brownDroprate, Droprate silverDroprate, Droprate goldDroprate)
+        private void Render()
         {
-            BrownR6Pre.Value = brownDroprate.R6GoldPrefix / 100;
-            BrownR6Post.Value = brownDroprate.R6GoldPostfix / 100;
-            BrownR7.Value = brownDroprate.R7 / 100;
-            BrownR8.Value = brownDroprate.R8 / 100;
-            BrownTotal.Text = $"{brownDroprate.R6GoldPrefix + brownDroprate.R6GoldPostfix + brownDroprate.R7 + brownDroprate.R8}%";
+            BrownR6Pre.Value = BrownDroprate.R6GoldPrefix;
+            BrownR6Post.Value = BrownDroprate.R6GoldPostfix;
+            BrownR7.Value = BrownDroprate.R7;
+            BrownR8.Value = BrownDroprate.R8;
+            BrownTotal.Text = $"{(BrownDroprate.R6GoldPrefix + BrownDroprate.R6GoldPostfix + BrownDroprate.R7 + BrownDroprate.R8) * 100}%";
 
-            SilverR6Pre.Value = silverDroprate.R6GoldPrefix / 100;
-            SilverR6Post.Value = silverDroprate.R6GoldPostfix / 100;
-            SilverR7.Value = silverDroprate.R7 / 100;
-            SilverR8.Value = silverDroprate.R8 / 100;
-            SilverTotal.Text = $"{silverDroprate.R6GoldPrefix + silverDroprate.R6GoldPostfix + silverDroprate.R7 + silverDroprate.R8}%";
+            SilverR6Pre.Value = SilverDroprate.R6GoldPrefix;
+            SilverR6Post.Value = SilverDroprate.R6GoldPostfix;
+            SilverR7.Value = SilverDroprate.R7;
+            SilverR8.Value = SilverDroprate.R8;
+            SilverTotal.Text = $"{(SilverDroprate.R6GoldPrefix + SilverDroprate.R6GoldPostfix + SilverDroprate.R7 + SilverDroprate.R8) * 100}%";
 
-            GoldR6Pre.Value = goldDroprate.R6GoldPrefix / 100;
-            GoldR6Post.Value = goldDroprate.R6GoldPostfix / 100;
-            GoldR7.Value = goldDroprate.R7 / 100;
-            GoldR8.Value = goldDroprate.R8 / 100;
-            GoldTotal.Text = $"{goldDroprate.R6GoldPrefix + goldDroprate.R6GoldPostfix + goldDroprate.R7 + goldDroprate.R8}%";
+            GoldR6Pre.Value = GoldDroprate.R6GoldPrefix;
+            GoldR6Post.Value = GoldDroprate.R6GoldPostfix;
+            GoldR7.Value = GoldDroprate.R7;
+            GoldR8.Value = GoldDroprate.R8;
+            GoldTotal.Text = $"{(GoldDroprate.R6GoldPrefix + GoldDroprate.R6GoldPostfix + GoldDroprate.R7 + GoldDroprate.R8) * 100}%";
 
             //TODO: Add over 100% error
+        }
+
+        private void LargerThan100(string item) => MessageBox.Show($"{item} is larger than 100%", "Error");
+
+        private void LoadDefault(object sender, RoutedEventArgs e) => PresetDroprate("Default.json");
+
+        private void LoadHex(object sender, RoutedEventArgs e) => PresetDroprate("Hex.json");
+
+        private void BrownChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+            if (!rendered) return;
+            if (((FrameworkElement)e.Source).Name == "BrownR6Pre") BrownDroprate.R6GoldPrefix = BrownR6Pre?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "BrownR6Post") BrownDroprate.R6GoldPostfix = BrownR6Post?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "BrownR7") BrownDroprate.R7 = BrownR7?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "BrownR8") BrownDroprate.R8 = BrownR8?.Value ?? 0;
+            Render();
+        }
+
+        private void SilverChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+            if (!rendered) return;
+            if (((FrameworkElement)e.Source).Name == "SilverR6Pre") SilverDroprate.R6GoldPrefix = SilverR6Pre?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "SilverR6Post") SilverDroprate.R6GoldPostfix = SilverR6Post?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "SilverR7") SilverDroprate.R7 = SilverR7?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "SilverR8") SilverDroprate.R8 = SilverR8?.Value ?? 0;
+            Render();
+        }
+
+        private void GoldChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+            if (!rendered) return;
+            if (((FrameworkElement)e.Source).Name == "GoldR6Pre") GoldDroprate.R6GoldPrefix = GoldR6Pre?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "GoldR6Post") GoldDroprate.R6GoldPostfix = GoldR6Post?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "GoldR7") GoldDroprate.R7 = GoldR7?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "GoldR8") GoldDroprate.R8 = GoldR8?.Value ?? 0;
+            Render();
         }
 
         private void OpenFile(object sender, RoutedEventArgs e)
@@ -102,7 +142,7 @@ namespace MhwKtDroprateEditor
                         GoldDroprate = new Droprate(WeaponType.Sublimated, r6Pre, r6Post, r7, r8);
                 }
 
-                Populate_Boxes(BrownDroprate, SilverDroprate, GoldDroprate);
+                Render();
             }
         }
 
@@ -138,59 +178,5 @@ namespace MhwKtDroprateEditor
                 }
             }
         }
-
-        private void Default_Button(object sender, RoutedEventArgs e)
-        {
-            var input = System.IO.File.ReadAllText("./Preset/Default.json");
-            Set(JsonConvert.DeserializeObject<Droprate>(input));
-        }
-
-        private void Hex_Button(object sender, RoutedEventArgs e)
-        {
-            var input = System.IO.File.ReadAllText("./Preset/Hex.json");
-            Set(JsonConvert.DeserializeObject<Droprate>(input));
-        }
-
-        private void Set(Droprate droprate) =>
-            //var itemlist = new List<Item>();
-            //foreach (var item in listboxout)
-            //{
-            //    listboxin.Add(item);
-            //    itemlist.Add(item);
-            //}
-            //foreach (var item in itemlist)
-            //{
-            //    listboxout.Remove(item);
-            //}
-            //Sort();
-            Refresh();
-
-        private void LargerThan100(string item) => MessageBox.Show($"{item} is larger than 100%", "Error");
-
-        public void Refresh()
-        {
-            //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("filteredInput"));
-            //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("filteredOutput"));
-        }
-
-        private void Input_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
-    }
-
-    public class Item
-    {
-        public string Key { get; set; }
-        public string Value { get; set; }
-        public int Hex => Convert.ToInt32(Key.Substring(4), 16);
-        public override string ToString() => Value;
     }
 }

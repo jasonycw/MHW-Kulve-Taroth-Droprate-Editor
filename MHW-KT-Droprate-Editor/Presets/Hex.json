@@ -1,23 +1,23 @@
 [
 	{
 		"Type" : "Dissolved",
-		"R6GoldPrefix" : 37,
-		"R6GoldPostfix" : 47,
-		"R7" : 16,
+		"R6GoldPrefix" : 0.37,
+		"R6GoldPostfix" : 0.47,
+		"R7" : 0.16,
 		"R8" : 0
 	},
 	{
 		"Type" : "Melded",
 		"R6GoldPrefix" : 0,
-		"R6GoldPostfix" : 49,
-		"R7" : 38,
-		"R8" : 13
+		"R6GoldPostfix" : 0.49,
+		"R7" : 0.38,
+		"R8" : 0.13
 	},
 	{
 		"Type" : "Sublimated",
 		"R6GoldPrefix" : 0,
 		"R6GoldPostfix" : 0,
-		"R7" : 58,
-		"R8" : 42
+		"R7" : 0.58,
+		"R8" : 0.42
 	}
 ]
