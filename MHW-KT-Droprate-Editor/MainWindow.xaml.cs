@@ -83,7 +83,7 @@ namespace MhwKtDroprateEditor
             total.Foreground = !droprate.Valid ? Brushes.Red : Brushes.Black;
         }
 
-        private void LargerThan100(string item) => MessageBox.Show($"{item} is larger than 100%", "Error");
+        private void LargerThan100(string item) => MessageBox.Show($"{item} probability is larger than 100%", "Error");
 
         private void LoadDefault(object sender, RoutedEventArgs e) => PresetDroprate("Default.json");
 
