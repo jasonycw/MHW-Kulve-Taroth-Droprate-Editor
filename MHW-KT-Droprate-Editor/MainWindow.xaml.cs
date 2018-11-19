@@ -125,10 +125,10 @@ namespace MhwKtDroprateEditor
                 for (var i = 6; i < input.Length - 1; i += 24)
                 {
                     buffer[0] = input[i + 8];
-                    var r6Pre = BitConverter.ToInt32(input, i + 8) / 100;
-                    var r6Post = BitConverter.ToInt32(input, i + 12) / 100;
-                    var r7 = BitConverter.ToInt32(input, i + 16) / 100;
-                    var r8 = BitConverter.ToInt32(input, i + 20) / 100;
+                    var r6Pre = (decimal) (BitConverter.ToInt32(input, i + 8) / 100.0);
+                    var r6Post = (decimal)(BitConverter.ToInt32(input, i + 12) / 100.0);
+                    var r7 = (decimal)(BitConverter.ToInt32(input, i + 16) / 100.0);
+                    var r8 = (decimal)(BitConverter.ToInt32(input, i + 20) / 100.0);
                     if (i == 6)
                         BrownDroprate = new Droprate(WeaponType.Dissolved, r6Pre, r6Post, r7, r8);
                     else if (i == 30)
