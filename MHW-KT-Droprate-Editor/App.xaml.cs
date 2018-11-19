@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace MhwKdDroprateEditor
+namespace MhwKtDroprateEditor
 {
     /// <summary>
     /// Interaction logic for App.xaml

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MhwKdDroprateEditor.Properties {
+namespace MhwKtDroprateEditor.Properties {
     using System;
     
     

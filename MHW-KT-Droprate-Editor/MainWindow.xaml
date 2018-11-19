@@ -1,43 +1,45 @@
-﻿<Window x:Class="MhwKdDroprateEditor.MainWindow"
+﻿<Window x:Class="MhwKtDroprateEditor.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MhwKdDroprateEditor"
-        mc:Ignorable="d" Height="450" Width="800" Title="{DynamicResource title}">
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d" Height="450" Width="666" Title="{DynamicResource title}" ResizeMode="NoResize">
     <Grid>
-        <Button Content="{DynamicResource default}" HorizontalAlignment="Left" Margin="610,52,0,0" VerticalAlignment="Top" Click="Default_Items"/>
+        <!--<Button Content="{DynamicResource default}" HorizontalAlignment="Left" Margin="610,52,0,0" VerticalAlignment="Top" Click="Default_Items"/>
         <Button Content="{DynamicResource gems}" HorizontalAlignment="Left" Margin="610,98,0,0" VerticalAlignment="Top" Click="All_Gems" />
         <Button Content="{DynamicResource consumables}" HorizontalAlignment="Left" Margin="610,144,0,0" VerticalAlignment="Top" Click="All_Consumables"/>
         <Button Content="{DynamicResource lr_mats}" HorizontalAlignment="Left" Margin="610,190,0,0" VerticalAlignment="Top" Click="LR_Materials"/>
         <Button Content="{DynamicResource hr_mats}" HorizontalAlignment="Left" Margin="610,236,0,0" VerticalAlignment="Top" Click="HR_Materials"/>
-        <Button Content="{DynamicResource clear}" HorizontalAlignment="Left" Margin="610,282,0,0" VerticalAlignment="Top" Click="Clear_Button" />
+        <Button Content="{DynamicResource clear}" HorizontalAlignment="Left" Margin="610,282,0,0" VerticalAlignment="Top" Click="Clear_Button" />-->
         <Menu HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="792">
-            <MenuItem Header="{DynamicResource file}" Height="19" Width="100">
+            <MenuItem Header="{DynamicResource file}" Height="19" Width="47">
                 <MenuItem Header="{DynamicResource open}" HorizontalAlignment="Left" Height="30" Width="140" Click="openFile"/>
                 <MenuItem Header="{DynamicResource save}" HorizontalAlignment="Left" Height="30" Width="140" Click="saveFile"/>
             </MenuItem>
-            <MenuItem Header="{DynamicResource settings}" Height="19" Width="100">
-                <ComboBox Width="120" SelectedIndex="0" SelectionChanged="Insertion_Method">
-                    <ComboBoxItem Content="{DynamicResource insertTop}" HorizontalAlignment="Left" Width="118"/>
-                    <ComboBoxItem Content="{DynamicResource insertBottom}" HorizontalAlignment="Left" Width="118"/>
-                </ComboBox>
-            </MenuItem>
-            <MenuItem Header="{DynamicResource lang}" Height="19" Width="100">
-                <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged" SelectedIndex="0">
-                    <ComboBoxItem Content="English" Tag="en-US"/>
-                </ComboBox>
-            </MenuItem>
         </Menu>
-        <Button Content="-&gt;" HorizontalAlignment="Left" Margin="254,103,0,0" VerticalAlignment="Top" Width="75" Click="Send_Out"/>
-        <Button Content="&lt;-" HorizontalAlignment="Left" Margin="254,291,0,0" VerticalAlignment="Top" Width="75" Click="Send_In"/>
-        <StackPanel HorizontalAlignment="Left" Height="371" Margin="59,24,0,0" VerticalAlignment="Top" Width="170" DataContext="{Binding Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}">
-            <TextBox Height="23" TextWrapping="Wrap" Name="InputFilter" Text="{Binding filterInputText, UpdateSourceTrigger=PropertyChanged}"/>
-            <ListBox Height="348" Name="input" SelectionMode="Extended" ItemsSource="{Binding filteredInput}"/>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="371" Margin="350,24,0,0" VerticalAlignment="Top" Width="170" DataContext="{Binding Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}">
-            <TextBox Height="23" TextWrapping="Wrap" Name="OutputFilter" Text="{Binding filterOutputText, UpdateSourceTrigger=PropertyChanged}"/>
-            <ListBox Height="348" Name="output" SelectionMode="Extended" ItemsSource="{Binding filteredOutput}"/>
-        </StackPanel>
+        <Image HorizontalAlignment="Left" Height="35" Margin="99,88,0,0" VerticalAlignment="Top" Width="42" Source="Images/r8.png"/>
+        <Image HorizontalAlignment="Left" Height="35" Margin="99,159,0,0" VerticalAlignment="Top" Width="42" Source="Images/r7.png"/>
+        <Image HorizontalAlignment="Left" Height="35" Margin="99,229,0,0" VerticalAlignment="Top" Width="42" Source="Images/r6.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="203,39,0,0" TextWrapping="Wrap" Text="R6 %" VerticalAlignment="Top" Height="18" Width="33"/>
+        <TextBlock HorizontalAlignment="Left" Margin="294,39,0,0" TextWrapping="Wrap" Text="R7 %" VerticalAlignment="Top" Height="18" Width="38"/>
+        <TextBlock HorizontalAlignment="Left" Margin="413,39,0,0" TextWrapping="Wrap" Text="R8 %" VerticalAlignment="Top" Height="18" Width="31"/>
+        <TextBlock HorizontalAlignment="Left" Margin="500,39,0,0" TextWrapping="Wrap" Text="Total %" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="500,94,0,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Top" Width="38" Height="28"/>
+        <TextBlock HorizontalAlignment="Left" Margin="500,161,0,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Top" Width="38" Height="28"/>
+        <TextBlock HorizontalAlignment="Left" Margin="500,231,0,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Top" Width="38" Height="28"/>
+        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="187,92,0,299" Width="56"/>
+        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="280,92,0,299" Width="56"/>
+        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="399,92,0,299" Width="56"/>
+        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="187,159,0,232" Width="56"/>
+        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="280,159,0,232" Width="56"/>
+        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="399,159,0,232" Width="56"/>
+        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="187,229,0,162" Width="56"/>
+        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="280,229,0,162" Width="56"/>
+        <xctk:DecimalUpDown HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="399,229,0,162" Width="56"/>
+        <Button Content="Load" HorizontalAlignment="Left" Margin="132,362,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Default" HorizontalAlignment="Left" Margin="234,362,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Hex" HorizontalAlignment="Left" Margin="336,362,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="430,362,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
     </Grid>
 </Window>
