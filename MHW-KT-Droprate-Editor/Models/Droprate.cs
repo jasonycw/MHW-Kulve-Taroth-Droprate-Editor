@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace MhwKtDroprateEditor.Models
 {
@@ -11,10 +10,10 @@ namespace MhwKtDroprateEditor.Models
         public decimal R7 { get; set; }
         public decimal R8 { get; set; }
 
-        public int TotalPercentage => (int) ((R6GoldPrefix + R6GoldPostfix + R7 + R8) * 100);
+        public int TotalPercentage => (int)((R6GoldPrefix + R6GoldPostfix + R7 + R8) * 100);
         public bool Valid => TotalPercentage == 100;
 
-        public byte[] ToByte 
+        public byte[] ToByte
             => new List<byte>
             {
                 (byte) (R6GoldPrefix * 100), 0x00, 0x00, 0x00,
