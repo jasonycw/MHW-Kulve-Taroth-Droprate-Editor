@@ -1,4 +1,4 @@
-# MHW Kulve Taroth Droprate Editor
+# MHW Kulve Taroth Droprate Editor 
 Monster Hunter World Kulve Taroth weapon droprate editor
 -------------------------------------------------------
 To change the droprate for R6, R7 and R8 weapons, place the `em117_grade_lot.em117glt` file in `steamapps\common\Monster Hunter World\nativePC\common\equip` 
@@ -22,3 +22,7 @@ https://www.nexusmods.com/monsterhunterworld/mods/473?tab=description
 and [@IXXur](https://www.nexusmods.com/monsterhunterworld/users/59870351) for the editor template, especially for the load and save file code<br>
 https://www.nexusmods.com/monsterhunterworld/mods/507?tab=description
 ![image](https://user-images.githubusercontent.com/4518597/48713042-56098680-ec4a-11e8-963c-23554921b110.png)
+
+<a href="https://ci.appveyor.com/project/jasonycw/mhw-kulve-taroth-droprate-editor" target="_blank">
+<img alt="Build status" src="https://ci.appveyor.com/api/projects/status/xw4sqoeisldkvinq?svg=true" />
+</a>
