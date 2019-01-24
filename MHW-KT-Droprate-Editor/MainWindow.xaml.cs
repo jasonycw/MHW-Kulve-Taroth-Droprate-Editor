@@ -122,19 +122,20 @@ namespace MhwKtDroprateEditor
                 var filename = dlg.FileName;
                 var input = File.ReadAllBytes(filename);
                 var buffer = new byte[1];
-                for (var i = 6; i < input.Length - 1; i += 24)
+                for (var i = 6; i < input.Length - 1; i += 28)
                 {
                     buffer[0] = input[i + 8];
                     var r6Pre = (decimal) (BitConverter.ToInt32(input, i + 8) / 100.0);
                     var r6Post = (decimal)(BitConverter.ToInt32(input, i + 12) / 100.0);
                     var r7 = (decimal)(BitConverter.ToInt32(input, i + 16) / 100.0);
                     var r8 = (decimal)(BitConverter.ToInt32(input, i + 20) / 100.0);
+                    var r9 = (decimal)(BitConverter.ToInt32(input, i + 24) / 100.0);
                     if (i == 6)
-                        BrownDroprate = new Droprate(WeaponType.Dissolved, r6Pre, r6Post, r7, r8);
-                    else if (i == 30)
-                        SilverDroprate = new Droprate(WeaponType.Melded, r6Pre, r6Post, r7, r8);
-                    else if (i == 54)
-                        GoldDroprate = new Droprate(WeaponType.Sublimated, r6Pre, r6Post, r7, r8);
+                        BrownDroprate = new Droprate(WeaponType.Dissolved, r6Pre, r6Post, r7, r8, r9);
+                    else if (i == 34)
+                        SilverDroprate = new Droprate(WeaponType.Melded, r6Pre, r6Post, r7, r8, r9);
+                    else if (i == 62)
+                        GoldDroprate = new Droprate(WeaponType.Sublimated, r6Pre, r6Post, r7, r8, r9);
                 }
 
                 Render();
@@ -172,7 +173,7 @@ namespace MhwKtDroprateEditor
             {
                 using (var fs = dlg.OpenFile())
                 {
-                    var buffer = new List<byte> { 0x1F, 0x00, 0x03, 0x00, 0x00, 0x00 };
+                    var buffer = new List<byte> { 0x3B, 0x00, 0x03, 0x00, 0x00, 0x00 };
                     var brownHeader = new List<byte> { 0x00, 0x00, 0x00, 0x00, 0xA8, 0x03, 0x00, 0x00 };
                     var silverHeader = new List<byte> { 0x01, 0x00, 0x00, 0x00, 0xA9, 0x03, 0x00, 0x00 };
                     var goldHeader = new List<byte> { 0x02, 0x00, 0x00, 0x00, 0xAA, 0x03, 0x00, 0x00 };
