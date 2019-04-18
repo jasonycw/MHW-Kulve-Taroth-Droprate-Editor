@@ -23,7 +23,7 @@
             <RowDefinition Height="33*"/>
             <RowDefinition Height="33*"/>
             <RowDefinition Height="33*"/>
-            <RowDefinition Height="20*"/>
+            <RowDefinition Height="30*"/>
         </Grid.RowDefinitions>
         <Image HorizontalAlignment="Center" Height="42" VerticalAlignment="Center" Width="42" Source="Images/r6.png" Grid.Row="1" Grid.Column="1"/>
         <Image HorizontalAlignment="Center" Height="42" VerticalAlignment="Center" Width="42" Source="Images/r7.png" Grid.Row="2" Grid.Column="1"/>
@@ -59,10 +59,10 @@
         <xctk:DecimalUpDown Grid.Row="4" ValueChanged="TextBoxChanged" x:Name="BlueR7" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="4"/>
         <xctk:DecimalUpDown Grid.Row="4" ValueChanged="TextBoxChanged" x:Name="BlueR8" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="5"/>
         <xctk:DecimalUpDown Grid.Row="4" ValueChanged="TextBoxChanged" x:Name="BlueKjarr" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="6"/>
-        <Button Grid.Row="5" x:Name="LoadButton" Content="Load" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75"  Click="OpenFile" Grid.Column="2"/>
-        <Button Grid.Row="5" x:Name="DefaultButton" Content="Default" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Click="LoadDefault" Grid.Column="3" />
-        <Button Grid.Row="5" x:Name="HexButton" Content="Hex's" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Click="LoadHex" Grid.Column="4"/>
-        <Button Grid.Row="5" x:Name="AsteriskButton" Content="Asterisk's" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Click="LoadAsterisk" Grid.Column="5"/>
-        <Button Grid.Row="5" x:Name="SaveButton" Content="Save" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Click="SaveFile" Grid.Column="6"/>
+        <Button Grid.Row="5" x:Name="LoadButton" Content="Load" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75"  Click="OpenFile" Grid.Column="2"/>
+        <Button Grid.Row="5" x:Name="DefaultButton" Content="Default" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Click="LoadDefault" Grid.Column="3" />
+        <Button Grid.Row="5" x:Name="HexButton" Content="Hex's" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Click="LoadHex" Grid.Column="4"/>
+        <Button Grid.Row="5" x:Name="AsteriskButton" Content="Asterisk's" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Click="LoadAsterisk" Grid.Column="5"/>
+        <Button Grid.Row="5" x:Name="SaveButton" Content="Save" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Click="SaveFile" Grid.Column="6"/>
     </Grid>
 </Window>
