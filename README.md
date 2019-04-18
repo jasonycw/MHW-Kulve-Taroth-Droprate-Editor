@@ -5,7 +5,7 @@
 
 Monster Hunter World Kulve Taroth weapon droprate editor
 -------------------------------------------------------
-To change the droprate for R6, R7 and R8 weapons, place the `em117_grade_lot.em117glt` file in `steamapps\common\Monster Hunter World\nativePC\common\equip` 
+To change the droprate for R6, R7, R8 and Kjarr weapons, place the `em117_grade_lot.em117glt` file in `steamapps\common\Monster Hunter World\nativePC\common\equip` 
   
 If the nativePC folder or any necessary subfolders don't exist, create them.  
   
@@ -14,12 +14,16 @@ Only the file named `em117_grade_lot.em117glt` will be read by the game, so you 
 -------------------------------------------------------
 
 ### Screenshot
-![image](https://user-images.githubusercontent.com/4518597/48719567-d0d99e00-ec58-11e8-8d10-d935c9a68d88.png)
+![image](https://user-images.githubusercontent.com/4518597/56345064-733e8300-61f1-11e9-89b8-734b9638e751.png)
 
 -------------------------------------------------------
 
 ### Credit
-Thanks to [@MHhexhexhex](https://twitter.com/MHhexhexhex) for the droprate table<br>
+Thanks to [@Asterisk](https://www.nexusmods.com/monsterhunterworld/users/37911820) for the droprate table before ATKT<br>
+https://www.nexusmods.com/monsterhunterworld/mods/1010?tab=description
+![alt text](https://staticdelivery.nexusmods.com/mods/2531/images/1010/1010-1555492959-1916550954.png)
+
+Thanks to [@MHhexhexhex](https://twitter.com/MHhexhexhex) for the droprate table before ATKT<br>
 https://www.nexusmods.com/monsterhunterworld/mods/473?tab=description
 ![alt text](https://staticdelivery.nexusmods.com/mods/2531/images/473/473-1541120521-428636282.png)
 

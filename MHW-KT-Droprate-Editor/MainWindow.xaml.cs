@@ -28,12 +28,14 @@ namespace MhwKtDroprateEditor
         public Droprate BrownDroprate;
         public Droprate SilverDroprate;
         public Droprate GoldDroprate;
+        public Droprate BlueDroprate;
 
         private void InitializeProperties()
         {
             BrownDroprate = new Droprate(WeaponType.Dissolved);
             SilverDroprate = new Droprate(WeaponType.Melded);
             GoldDroprate = new Droprate(WeaponType.Sublimated);
+            BlueDroprate = new Droprate(WeaponType.Incandescent);
         }
 
         public MainWindow()
@@ -56,23 +58,26 @@ namespace MhwKtDroprateEditor
                 BrownDroprate = droprates.FirstOrDefault(d => d.Type == WeaponType.Dissolved);
                 SilverDroprate = droprates.FirstOrDefault(d => d.Type == WeaponType.Melded);
                 GoldDroprate = droprates.FirstOrDefault(d => d.Type == WeaponType.Sublimated);
+                BlueDroprate = droprates.FirstOrDefault(d => d.Type == WeaponType.Incandescent);
             }
             Render();
         }
 
         private void Render()
         {
-            Render(BrownDroprate, BrownR6Pre, BrownR6Post, BrownR7, BrownR8, BrownTotal);
-            Render(SilverDroprate, SilverR6Pre, SilverR6Post, SilverR7, SilverR8, SilverTotal);
-            Render(GoldDroprate, GoldR6Pre, GoldR6Post, GoldR7, GoldR8, GoldTotal);
+            Render(BrownDroprate, BrownR6Pre, BrownR6Post, BrownR7, BrownR8, BrownKjarr, BrownTotal);
+            Render(SilverDroprate, SilverR6Pre, SilverR6Post, SilverR7, SilverR8, SilverKjarr, SilverTotal);
+            Render(GoldDroprate, GoldR6Pre, GoldR6Post, GoldR7, GoldR8, GoldKjarr, GoldTotal);
+            Render(BlueDroprate, BlueR6Pre, BlueR6Post, BlueR7, BlueR8, BlueKjarr, BlueTotal);
         }
 
-        private void Render(Droprate droprate, DecimalUpDown r6Pre, DecimalUpDown r6Post, DecimalUpDown r7, DecimalUpDown r8, TextBlock total)
+        private void Render(Droprate droprate, DecimalUpDown r6Pre, DecimalUpDown r6Post, DecimalUpDown r7, DecimalUpDown r8, DecimalUpDown kjarr, TextBlock total)
         {
             r6Pre.Value = droprate.R6GoldPrefix;
             r6Post.Value = droprate.R6GoldPostfix;
             r7.Value = droprate.R7;
             r8.Value = droprate.R8;
+            kjarr.Value = droprate.Kjarr;
 
             RenderTotal(droprate, total);
         }
@@ -87,6 +92,9 @@ namespace MhwKtDroprateEditor
 
         private void LoadDefault(object sender, RoutedEventArgs e) => PresetDroprate("Default.json");
 
+
+        private void LoadAsterisk(object sender, RoutedEventArgs e) => PresetDroprate("Asterisk.json");
+
         private void LoadHex(object sender, RoutedEventArgs e) => PresetDroprate("Hex.json");
 
         private void TextBoxChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
@@ -96,14 +104,26 @@ namespace MhwKtDroprateEditor
             if (((FrameworkElement)e.Source).Name == "BrownR6Post") BrownDroprate.R6GoldPostfix = BrownR6Post?.Value ?? 0;
             if (((FrameworkElement)e.Source).Name == "BrownR7") BrownDroprate.R7 = BrownR7?.Value ?? 0;
             if (((FrameworkElement)e.Source).Name == "BrownR8") BrownDroprate.R8 = BrownR8?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "BrownKjarr") BrownDroprate.Kjarr = BrownKjarr?.Value ?? 0;
+
             if (((FrameworkElement)e.Source).Name == "SilverR6Pre") SilverDroprate.R6GoldPrefix = SilverR6Pre?.Value ?? 0;
             if (((FrameworkElement)e.Source).Name == "SilverR6Post") SilverDroprate.R6GoldPostfix = SilverR6Post?.Value ?? 0;
             if (((FrameworkElement)e.Source).Name == "SilverR7") SilverDroprate.R7 = SilverR7?.Value ?? 0;
             if (((FrameworkElement)e.Source).Name == "SilverR8") SilverDroprate.R8 = SilverR8?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "SilverKjarr") SilverDroprate.Kjarr = SilverKjarr?.Value ?? 0;
+
             if (((FrameworkElement)e.Source).Name == "GoldR6Pre") GoldDroprate.R6GoldPrefix = GoldR6Pre?.Value ?? 0;
             if (((FrameworkElement)e.Source).Name == "GoldR6Post") GoldDroprate.R6GoldPostfix = GoldR6Post?.Value ?? 0;
             if (((FrameworkElement)e.Source).Name == "GoldR7") GoldDroprate.R7 = GoldR7?.Value ?? 0;
             if (((FrameworkElement)e.Source).Name == "GoldR8") GoldDroprate.R8 = GoldR8?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "GoldKjarr") GoldDroprate.Kjarr = GoldKjarr?.Value ?? 0;
+
+            if (((FrameworkElement)e.Source).Name == "BlueR6Pre") BlueDroprate.R6GoldPrefix = BlueR6Pre?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "BlueR6Post") BlueDroprate.R6GoldPostfix = BlueR6Post?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "BlueR7") BlueDroprate.R7 = BlueR7?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "BlueR8") BlueDroprate.R8 = BlueR8?.Value ?? 0;
+            if (((FrameworkElement)e.Source).Name == "BlueKjarr") BlueDroprate.Kjarr = BlueKjarr?.Value ?? 0;
+
             Render();
         }
 
@@ -125,17 +145,19 @@ namespace MhwKtDroprateEditor
                 for (var i = 6; i < input.Length - 1; i += 28)
                 {
                     buffer[0] = input[i + 8];
-                    var r6Pre = (decimal) (BitConverter.ToInt32(input, i + 8) / 100.0);
+                    var r6Pre = (decimal)(BitConverter.ToInt32(input, i + 8) / 100.0);
                     var r6Post = (decimal)(BitConverter.ToInt32(input, i + 12) / 100.0);
                     var r7 = (decimal)(BitConverter.ToInt32(input, i + 16) / 100.0);
                     var r8 = (decimal)(BitConverter.ToInt32(input, i + 20) / 100.0);
-                    var r9 = (decimal)(BitConverter.ToInt32(input, i + 24) / 100.0);
+                    var kjarr = (decimal)(BitConverter.ToInt32(input, i + 24) / 100.0);
                     if (i == 6)
-                        BrownDroprate = new Droprate(WeaponType.Dissolved, r6Pre, r6Post, r7, r8, r9);
+                        BrownDroprate = new Droprate(WeaponType.Dissolved, r6Pre, r6Post, r7, r8, kjarr);
                     else if (i == 34)
-                        SilverDroprate = new Droprate(WeaponType.Melded, r6Pre, r6Post, r7, r8, r9);
+                        SilverDroprate = new Droprate(WeaponType.Melded, r6Pre, r6Post, r7, r8, kjarr);
                     else if (i == 62)
-                        GoldDroprate = new Droprate(WeaponType.Sublimated, r6Pre, r6Post, r7, r8, r9);
+                        GoldDroprate = new Droprate(WeaponType.Sublimated, r6Pre, r6Post, r7, r8, kjarr);
+                    else if (i == 90)
+                        BlueDroprate = new Droprate(WeaponType.Incandescent, r6Pre, r6Post, r7, r8, kjarr);
                 }
 
                 Render();
@@ -159,6 +181,11 @@ namespace MhwKtDroprateEditor
                 LargerThan100(GoldDroprate.Type.ToString());
                 return;
             }
+            if (!BlueDroprate.Valid)
+            {
+                LargerThan100(BlueDroprate.Type.ToString());
+                return;
+            }
 
             var dlg = new Microsoft.Win32.SaveFileDialog
             {
@@ -173,10 +200,11 @@ namespace MhwKtDroprateEditor
             {
                 using (var fs = dlg.OpenFile())
                 {
-                    var buffer = new List<byte> { 0x3B, 0x00, 0x03, 0x00, 0x00, 0x00 };
+                    var buffer = new List<byte> { 0x3B, 0x00, 0x04, 0x00, 0x00, 0x00 };
                     var brownHeader = new List<byte> { 0x00, 0x00, 0x00, 0x00, 0xA8, 0x03, 0x00, 0x00 };
                     var silverHeader = new List<byte> { 0x01, 0x00, 0x00, 0x00, 0xA9, 0x03, 0x00, 0x00 };
                     var goldHeader = new List<byte> { 0x02, 0x00, 0x00, 0x00, 0xAA, 0x03, 0x00, 0x00 };
+                    var blueHeader = new List<byte> { 0x03, 0x00, 0x00, 0x00, 0xD1, 0x03, 0x00, 0x00 };
 
                     buffer.AddRange(brownHeader);
                     buffer.AddRange(BrownDroprate.ToByte);
@@ -184,6 +212,8 @@ namespace MhwKtDroprateEditor
                     buffer.AddRange(SilverDroprate.ToByte);
                     buffer.AddRange(goldHeader);
                     buffer.AddRange(GoldDroprate.ToByte);
+                    buffer.AddRange(blueHeader);
+                    buffer.AddRange(BlueDroprate.ToByte);
 
                     var output = buffer.ToArray();
                     await fs.WriteAsync(output, 0, output.Length);
