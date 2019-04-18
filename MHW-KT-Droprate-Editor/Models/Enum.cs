@@ -2,6 +2,6 @@
 {
     public enum WeaponType
     {
-        Dissolved, Melded, Sublimated
+        Dissolved, Melded, Sublimated, Incandescent 
     }
 }

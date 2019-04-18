@@ -6,39 +6,63 @@
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d" Height="400" Width="666" Title="{DynamicResource title}" ResizeMode="NoResize">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="20*"/>
             <RowDefinition Height="33*"/>
             <RowDefinition Height="33*"/>
             <RowDefinition Height="33*"/>
             <RowDefinition Height="33*"/>
+            <RowDefinition Height="20*"/>
         </Grid.RowDefinitions>
-        <Image HorizontalAlignment="Left" Height="42" Margin="99,0,0,0" VerticalAlignment="Center" Width="42" Source="Images/r6.png" Grid.Row="1"/>
-        <Image HorizontalAlignment="Left" Height="42" Margin="99,0,0,0" VerticalAlignment="Center" Width="42" Source="Images/r7.png" Grid.Row="2"/>
-        <Image HorizontalAlignment="Left" Height="42" Margin="99,0,0,0" VerticalAlignment="Center" Width="42" Source="Images/r8.png" Grid.Row="3"/>
-        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Margin="163,0,0,0" TextWrapping="Wrap" Text="R6 Gold ___ %" VerticalAlignment="Bottom" Height="18" Width="80" TextAlignment="Center"/>
-        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Margin="266,0,0,0" TextWrapping="Wrap" Text="R6 ___ Gold %" VerticalAlignment="Bottom" Height="18" Width="79" TextAlignment="Center"/>
-        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Margin="385,0,0,0" TextWrapping="Wrap" Text="R7 %" VerticalAlignment="Bottom" Height="18" Width="38" TextAlignment="Center"/>
-        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Margin="482,0,0,0" TextWrapping="Wrap" Text="R8 %" VerticalAlignment="Bottom" Height="18" Width="31" TextAlignment="Center"/>
-        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Margin="558,0,0,0" TextWrapping="Wrap" Text="Total %" VerticalAlignment="Bottom" Width="50" TextAlignment="Center"/>
-        <TextBlock Grid.Row="1" x:Name="BrownTotal" HorizontalAlignment="Center" Margin="558,0,52,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Center" Width="50" Height="17" TextAlignment="Center"/>
-        <TextBlock Grid.Row="2" x:Name="SilverTotal" HorizontalAlignment="Center" Margin="558,0,52,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Center" Width="50" Height="17" TextAlignment="Center"/>
-        <TextBlock Grid.Row="3" x:Name="GoldTotal" HorizontalAlignment="Center" Margin="558,0,52,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Center" Width="50" Height="17" TextAlignment="Center"/>
-        <xctk:DecimalUpDown Grid.Row="1" ValueChanged="TextBoxChanged" x:Name="BrownR6Pre" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="178,0,0,0" Width="56" VerticalAlignment="Center"/>
-        <xctk:DecimalUpDown Grid.Row="1" ValueChanged="TextBoxChanged" x:Name="BrownR6Post" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="277,0,0,0" Width="56" VerticalAlignment="Center"/>
-        <xctk:DecimalUpDown Grid.Row="1" ValueChanged="TextBoxChanged" x:Name="BrownR7" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="376,0,0,0" Width="56" VerticalAlignment="Center"/>
-        <xctk:DecimalUpDown Grid.Row="1" ValueChanged="TextBoxChanged" x:Name="BrownR8" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="475,0,0,0" Width="56" VerticalAlignment="Center"/>
-        <xctk:DecimalUpDown Grid.Row="2" ValueChanged="TextBoxChanged" x:Name="SilverR6Pre" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="178,0,0,0" Width="56" VerticalAlignment="Center"/>
-        <xctk:DecimalUpDown Grid.Row="2" ValueChanged="TextBoxChanged" x:Name="SilverR6Post" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="277,0,0,0" Width="56" VerticalAlignment="Center"/>
-        <xctk:DecimalUpDown Grid.Row="2" ValueChanged="TextBoxChanged" x:Name="SilverR7" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="376,0,0,0" Width="56" VerticalAlignment="Center"/>
-        <xctk:DecimalUpDown Grid.Row="2" ValueChanged="TextBoxChanged" x:Name="SilverR8" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="475,0,0,0" Width="56" VerticalAlignment="Center"/>
-        <xctk:DecimalUpDown Grid.Row="3" ValueChanged="TextBoxChanged" x:Name="GoldR6Pre" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="178,0,0,0" Width="56" VerticalAlignment="Center"/>
-        <xctk:DecimalUpDown Grid.Row="3" ValueChanged="TextBoxChanged" x:Name="GoldR6Post" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="277,0,0,0" Width="56" VerticalAlignment="Center"/>
-        <xctk:DecimalUpDown Grid.Row="3" ValueChanged="TextBoxChanged" x:Name="GoldR7" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="376,0,0,0" Width="56" VerticalAlignment="Center"/>
-        <xctk:DecimalUpDown Grid.Row="3" ValueChanged="TextBoxChanged" x:Name="GoldR8" HorizontalAlignment="Left" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Margin="475,0,0,0" Width="56" VerticalAlignment="Center"/>
-        <Button Grid.Row="4" x:Name="LoadButton" Content="Load" HorizontalAlignment="Left" Margin="129,0,0,0" VerticalAlignment="Center" Width="75"  Click="OpenFile"/>
-        <Button Grid.Row="4" x:Name="DefaultButton" Content="Default" HorizontalAlignment="Left" Margin="231,0,0,0" VerticalAlignment="Center" Width="75" Click="LoadDefault" />
-        <Button Grid.Row="4" x:Name="HexButton" Content="Hex" HorizontalAlignment="Left" Margin="333,0,0,0" VerticalAlignment="Center" Width="75" Click="LoadHex"/>
-        <Button Grid.Row="4" x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="435,0,0,0" VerticalAlignment="Center" Width="75" Click="SaveFile"/>
+        <Image HorizontalAlignment="Center" Height="42" VerticalAlignment="Center" Width="42" Source="Images/r6.png" Grid.Row="1" Grid.Column="1"/>
+        <Image HorizontalAlignment="Center" Height="42" VerticalAlignment="Center" Width="42" Source="Images/r7.png" Grid.Row="2" Grid.Column="1"/>
+        <Image HorizontalAlignment="Center" Height="42" VerticalAlignment="Center" Width="42" Source="Images/r8.png" Grid.Row="3" Grid.Column="1"/>
+        <Image HorizontalAlignment="Center" Height="42" VerticalAlignment="Center" Width="42" Source="Images/r8.png" Grid.Row="4" Grid.Column="1"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="R6 Gold ___ %" VerticalAlignment="Bottom" TextAlignment="Center" Grid.Column="2"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="R6 ___ Gold %" VerticalAlignment="Bottom" TextAlignment="Center" Grid.Column="3"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="R7 %" VerticalAlignment="Bottom" TextAlignment="Center" Grid.Column="4"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="R8 %" VerticalAlignment="Bottom" TextAlignment="Center" Grid.Column="5"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Kjarr %" VerticalAlignment="Bottom" TextAlignment="Center" Grid.Column="6"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Total %" VerticalAlignment="Bottom" TextAlignment="Center" Grid.Column="7"/>
+        <TextBlock Grid.Row="1" x:Name="BrownTotal" HorizontalAlignment="Center" TextWrapping="Wrap" Text="100%" VerticalAlignment="Center" TextAlignment="Center" Grid.Column="7"/>
+        <TextBlock Grid.Row="2" x:Name="SilverTotal" HorizontalAlignment="Center" TextWrapping="Wrap" Text="100%" VerticalAlignment="Center" TextAlignment="Center" Grid.Column="7"/>
+        <TextBlock Grid.Row="3" x:Name="GoldTotal" HorizontalAlignment="Center" TextWrapping="Wrap" Text="100%" VerticalAlignment="Center" TextAlignment="Center" Grid.Column="7"/>
+        <TextBlock Grid.Row="4" x:Name="BlueTotal" HorizontalAlignment="Center" TextWrapping="Wrap" Text="100%" VerticalAlignment="Center" TextAlignment="Center" Grid.Column="7"/>
+        <xctk:DecimalUpDown Grid.Row="1" ValueChanged="TextBoxChanged" x:Name="BrownR6Pre" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="2"/>
+        <xctk:DecimalUpDown Grid.Row="1" ValueChanged="TextBoxChanged" x:Name="BrownR6Post" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="3"/>
+        <xctk:DecimalUpDown Grid.Row="1" ValueChanged="TextBoxChanged" x:Name="BrownR7" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="4"/>
+        <xctk:DecimalUpDown Grid.Row="1" ValueChanged="TextBoxChanged" x:Name="BrownR8" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="5"/>
+        <xctk:DecimalUpDown Grid.Row="1" ValueChanged="TextBoxChanged" x:Name="BrownKjarr" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="6"/>
+        <xctk:DecimalUpDown Grid.Row="2" ValueChanged="TextBoxChanged" x:Name="SilverR6Pre" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="2"/>
+        <xctk:DecimalUpDown Grid.Row="2" ValueChanged="TextBoxChanged" x:Name="SilverR6Post" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="3"/>
+        <xctk:DecimalUpDown Grid.Row="2" ValueChanged="TextBoxChanged" x:Name="SilverR7" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="4"/>
+        <xctk:DecimalUpDown Grid.Row="2" ValueChanged="TextBoxChanged" x:Name="SilverR8" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="5"/>
+        <xctk:DecimalUpDown Grid.Row="2" ValueChanged="TextBoxChanged" x:Name="SilverKjarr" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="6"/>
+        <xctk:DecimalUpDown Grid.Row="3" ValueChanged="TextBoxChanged" x:Name="GoldR6Pre" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="2"/>
+        <xctk:DecimalUpDown Grid.Row="3" ValueChanged="TextBoxChanged" x:Name="GoldR6Post" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="3"/>
+        <xctk:DecimalUpDown Grid.Row="3" ValueChanged="TextBoxChanged" x:Name="GoldR7" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="4"/>
+        <xctk:DecimalUpDown Grid.Row="3" ValueChanged="TextBoxChanged" x:Name="GoldR8" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="5"/>
+        <xctk:DecimalUpDown Grid.Row="3" ValueChanged="TextBoxChanged" x:Name="GoldKjarr" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="6"/>
+        <xctk:DecimalUpDown Grid.Row="4" ValueChanged="TextBoxChanged" x:Name="BlueR6Pre" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="2"/>
+        <xctk:DecimalUpDown Grid.Row="4" ValueChanged="TextBoxChanged" x:Name="BlueR6Post" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="3"/>
+        <xctk:DecimalUpDown Grid.Row="4" ValueChanged="TextBoxChanged" x:Name="BlueR7" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="4"/>
+        <xctk:DecimalUpDown Grid.Row="4" ValueChanged="TextBoxChanged" x:Name="BlueR8" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="5"/>
+        <xctk:DecimalUpDown Grid.Row="4" ValueChanged="TextBoxChanged" x:Name="BlueKjarr" HorizontalAlignment="Center" FormatString="P0" Value="0" Increment="0.01" Minimum="0" Maximum="1" Width="56" VerticalAlignment="Center" Grid.Column="6"/>
+        <Button Grid.Row="5" x:Name="LoadButton" Content="Load" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75"  Click="OpenFile" Grid.Column="2"/>
+        <Button Grid.Row="5" x:Name="DefaultButton" Content="Default" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Click="LoadDefault" Grid.Column="3" />
+        <Button Grid.Row="5" x:Name="HexButton" Content="Hex's" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Click="LoadHex" Grid.Column="4"/>
+        <Button Grid.Row="5" x:Name="AsteriskButton" Content="Asterisk's" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Click="LoadAsterisk" Grid.Column="5"/>
+        <Button Grid.Row="5" x:Name="SaveButton" Content="Save" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Click="SaveFile" Grid.Column="6"/>
     </Grid>
 </Window>
