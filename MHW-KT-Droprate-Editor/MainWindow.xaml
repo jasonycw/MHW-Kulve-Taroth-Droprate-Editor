@@ -28,7 +28,7 @@
         <Image HorizontalAlignment="Center" Height="42" VerticalAlignment="Center" Width="42" Source="Images/r6.png" Grid.Row="1" Grid.Column="1"/>
         <Image HorizontalAlignment="Center" Height="42" VerticalAlignment="Center" Width="42" Source="Images/r7.png" Grid.Row="2" Grid.Column="1"/>
         <Image HorizontalAlignment="Center" Height="42" VerticalAlignment="Center" Width="42" Source="Images/r8.png" Grid.Row="3" Grid.Column="1"/>
-        <Image HorizontalAlignment="Center" Height="42" VerticalAlignment="Center" Width="42" Source="Images/r8.png" Grid.Row="4" Grid.Column="1"/>
+        <Image HorizontalAlignment="Center" Height="42" VerticalAlignment="Center" Width="42" Source="Images/kjarr.png" Grid.Row="4" Grid.Column="1"/>
         <TextBlock Grid.Row="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="R6 Gold ___ %" VerticalAlignment="Bottom" TextAlignment="Center" Grid.Column="2"/>
         <TextBlock Grid.Row="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="R6 ___ Gold %" VerticalAlignment="Bottom" TextAlignment="Center" Grid.Column="3"/>
         <TextBlock Grid.Row="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="R7 %" VerticalAlignment="Bottom" TextAlignment="Center" Grid.Column="4"/>

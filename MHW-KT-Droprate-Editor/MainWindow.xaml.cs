@@ -145,7 +145,7 @@ namespace MhwKtDroprateEditor
                 for (var i = 6; i < input.Length - 1; i += 28)
                 {
                     buffer[0] = input[i + 8];
-                    var r6Pre = (decimal) (BitConverter.ToInt32(input, i + 8) / 100.0);
+                    var r6Pre = (decimal)(BitConverter.ToInt32(input, i + 8) / 100.0);
                     var r6Post = (decimal)(BitConverter.ToInt32(input, i + 12) / 100.0);
                     var r7 = (decimal)(BitConverter.ToInt32(input, i + 16) / 100.0);
                     var r8 = (decimal)(BitConverter.ToInt32(input, i + 20) / 100.0);
