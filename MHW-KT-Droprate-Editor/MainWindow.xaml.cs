@@ -131,7 +131,7 @@ namespace MhwKtDroprateEditor
         {
             var dlg = new Microsoft.Win32.OpenFileDialog
             {
-                FileName = "em117_grade_lot",
+                FileName = "em117_ex_grade_lot",
                 DefaultExt = ".em117glt",
                 Filter = "KL Droprate table | *.em117glt",
                 InitialDirectory = AppDomain.CurrentDomain.BaseDirectory
@@ -189,7 +189,7 @@ namespace MhwKtDroprateEditor
 
             var dlg = new Microsoft.Win32.SaveFileDialog
             {
-                FileName = "em117_grade_lot",
+                FileName = "em117_ex_grade_lot",
                 DefaultExt = ".em117glt",
                 Filter = "KL Droprate table | *.em117glt",
                 InitialDirectory = AppDomain.CurrentDomain.BaseDirectory
