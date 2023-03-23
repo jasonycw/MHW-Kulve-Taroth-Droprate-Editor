@@ -35,4 +35,4 @@ and [@IXXur](https://www.nexusmods.com/monsterhunterworld/users/59870351) for th
 https://www.nexusmods.com/monsterhunterworld/mods/507
 ![image](https://user-images.githubusercontent.com/4518597/48713042-56098680-ec4a-11e8-963c-23554921b110.png)
 
-
+[![Visualization of the codebase](./diagram.svg)](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=jasonycw%2FMHW-Kulve-Taroth-Droprate-Editor)
